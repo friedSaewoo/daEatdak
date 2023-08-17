@@ -18,12 +18,7 @@ a{
     text-decoration: none;
     color: black;
 }
-h4{
-    font-size: 15px;
-}
-p{
-    font-size:12px;
-}
+
 .myPage-container{
     display: flex;
     margin :30px auto ;
@@ -63,16 +58,13 @@ p{
 
 .myPage-title{
     display: flex;
-    width: 700px;
-    height: 50px;
-    border-bottom:1px solid black;
-    margin: 0px 45px;
+    width: 300px;
+    height: 70px;
 }
 
 .title-text{
-    display: inline-block;
     font-size: 30px;
-    text-align: left;
+    margin-left:30px
 }
 
 .myPage-main{
@@ -88,36 +80,46 @@ p{
 }
 
 .myPage-main-contents{
-    background-color:bisque;
     display: flex;
-    width: 500px;
-    margin: 0 45px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    width: 95%;
     height: 150px;
-    padding: 50px 100px;
 }
 
-.inner{
-    padding: 0 90px;
-    width:310px;
-    border:1px solid black;
+.product-img-box{
+    border: 1px solid black;
+    width: 200px;
+    height: 140px;
+    margin: 5px 0 0 5px;
 }
 
-.input-box{
-    margin-top: 10px;
-    width: 500px;
+.product-img{
+    width: 200px;
+    height: 140px;
 }
 
-.input-password{
-    width: 280px;
-    height: 50px;
-    padding-left: 10px;
-    border: 1px solid #ccc;
-    outline: none;
+.product-info{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: column;
+    margin: 5px 5px 5px auto;
+    text-align: right;
 }
 
-.input-btn{
-    height: 54px;
-    width: 52px;
+.cancle-btn-box{
+    display: flex;
+    margin :auto 5px 5px auto;
+}
+
+.cancle-btn{
     border: none;
     background-color: rgb(94, 190,231);
     color: white;

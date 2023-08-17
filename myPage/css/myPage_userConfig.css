@@ -18,24 +18,19 @@ a{
     text-decoration: none;
     color: black;
 }
-h4{
-    font-size: 15px;
-}
-p{
-    font-size:12px;
-}
+
 .myPage-container{
     display: flex;
     margin :30px auto ;
     background-color: #f7f7f7;
     width: 1024px;
-    height: 1000px;
+    height: 3000px;
     border: 1px solid black;
 }
 
 .sidemenu{
     width: 190px;
-    height: 800px;
+    height: 1000px;
     margin: 10px;
     padding: 10px;
     background-color: white;
@@ -63,16 +58,13 @@ p{
 
 .myPage-title{
     display: flex;
-    width: 700px;
-    height: 50px;
-    border-bottom:1px solid black;
-    margin: 0px 45px;
+    width: 300px;
+    height: 100px;
 }
 
 .title-text{
-    display: inline-block;
     font-size: 30px;
-    text-align: left;
+    margin-left:30px
 }
 
 .myPage-main{
@@ -82,43 +74,7 @@ p{
     top:12%;
     left: 31%;
     width: 790px;
-    height: 820px;
+    height: 1020px;
     margin-top: 10px;
     margin-right: 10px;
-}
-
-.myPage-main-contents{
-    background-color:bisque;
-    display: flex;
-    width: 500px;
-    margin: 0 45px;
-    height: 150px;
-    padding: 50px 100px;
-}
-
-.inner{
-    padding: 0 90px;
-    width:310px;
-    border:1px solid black;
-}
-
-.input-box{
-    margin-top: 10px;
-    width: 500px;
-}
-
-.input-password{
-    width: 280px;
-    height: 50px;
-    padding-left: 10px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-.input-btn{
-    height: 54px;
-    width: 52px;
-    border: none;
-    background-color: rgb(94, 190,231);
-    color: white;
 }
