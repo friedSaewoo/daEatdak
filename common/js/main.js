@@ -1,3 +1,57 @@
+$(".goods-container").each(function () {
+    var tabMenuDiv = $(this);
+    var menu_a = tabMenuDiv.find("a");
+    var panelDiv = tabMenuDiv.find("div.panel");
+    panelDiv.hide();
+  
+    var panelOne;
+    var panelShow;
+  
+    panelOne = menu_a.filter(".on");
+    panelShow = $(panelOne.attr("href"));
+    panelShow.show();
+  
+    menu_a.click(function (x) {
+      var currentA = $(this);
+      var currentA_panel = $(currentA.attr("href"));
+      x.preventDefault();
+  
+      panelOne.removeClass("on");
+      currentA.addClass("on");
+  
+      panelShow.hide();
+      currentA_panel.show();
+  
+      panelOne = currentA;
+      panelShow = currentA_panel;
+  
+      currentA.click(function () {
+        currentA_panel.children("ul").show();
+      });
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let $slideBox = $('.recently-goods-contents ul');
 let $slideImgs = $('.recently-goods-contents ul img');
 let slideWidth = 1051;

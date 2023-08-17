@@ -81,7 +81,7 @@
     height: 200px;
 }
 
-.recently-goods-container {
+.goods-container, .recently-goods-container {
     position: relative;
 }
 
