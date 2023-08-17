@@ -1,36 +1,35 @@
 $(".goods-container").each(function () {
-    var tabMenuDiv = $(this);
-    var menu_a = tabMenuDiv.find("a");
-    var panelDiv = tabMenuDiv.find("div.panel");
-    panelDiv.hide();
+    var tabMenuDiv2 = $(this);
+    var menu_a2 = tabMenuDiv2.find("a");
+    var panelDiv2 = tabMenuDiv2.find("div.panel");
+    panelDiv2.hide();
   
-    var panelOne;
-    var panelShow;
+    var panelOne2;
+    var panelShow2;
   
-    panelOne = menu_a.filter(".on");
-    panelShow = $(panelOne.attr("href"));
-    panelShow.show();
+    panelOne2 = menu_a2.filter(".on");
+    panelShow2 = $(panelOne2.attr("href"));
+    panelShow2.show();
   
-    menu_a.click(function (x) {
-      var currentA = $(this);
-      var currentA_panel = $(currentA.attr("href"));
+    menu_a2.click(function (x) {
+      var currentA2 = $(this);
+      var currentA2_panel = $(currentA2.attr("href"));
       x.preventDefault();
   
-      panelOne.removeClass("on");
-      currentA.addClass("on");
+      panelOne2.removeClass("on");
+      currentA2.addClass("on");
   
-      panelShow.hide();
-      currentA_panel.show();
+      panelShow2.hide();
+      currentA2_panel.show();
   
-      panelOne = currentA;
-      panelShow = currentA_panel;
+      panelOne2 = currentA2;
+      panelShow2 = currentA2_panel;
   
-      currentA.click(function () {
-        currentA_panel.children("ul").show();
+      currentA2.click(function () {
+        currentA2_panel.children("ul").show();
       });
     });
   });
-
 
 
 
