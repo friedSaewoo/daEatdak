@@ -1,0 +1,48 @@
+.main{
+    background-color: rgb(243, 243, 243);
+}
+
+.pwfind-container {
+    width: 1024px;
+    height: 100%;
+}
+
+.pwfind-area {
+    width: 420px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.pwfind-greeting {
+    padding-top: 100px;
+    font-size: 32px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.input-text input{
+    width : 416px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.button-submit button{
+    width : 100%;
+    height: 40px;
+    margin-top: 15px;  
+    background-color: RGB(94,190,231);
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 40px;  
+    text-align: center;
+}
+
+
+
+
+
