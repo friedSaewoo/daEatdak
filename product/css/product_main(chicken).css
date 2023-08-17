@@ -33,7 +33,7 @@
 }
 
 .product-inter{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 30px;
     width: 1024px;
     padding: 5px;
@@ -47,13 +47,13 @@
     grid-gap: 5px; */
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     list-style-type: none;
 }
 
 .list-info{
     margin: 10px;
-    width: 250px;
+    width: 300px;
     /* border: 1px solid black; */
 }
 
@@ -79,7 +79,42 @@
     color: chocolate;
 }
 
-.list .list-price{
-    margin: 3;
+.list-name-bottom{
     float: right;
+    font-size: 15px;
+    /* border: 1px solid red; */
+    
 }
+
+.list-price{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    padding-left:230px;
+}
+
+.pageing{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.page-box{
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 50px;
+}
+
+.page-box>li>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.arrow{ 
+    /* border: 1px solid aqua; */
+    margin: 0 20px;
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+   
+}
+
