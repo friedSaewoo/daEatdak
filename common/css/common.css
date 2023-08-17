@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+*{
+
+    /* 전체 css 공통 부분 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+}
+/* 푸터 하단 고정을 위한 css */
+.header-main-container {
+    height: auto;
+    /* 추후에 min-height값은 조정해야함 */
+    min-height: 100vh;
+    padding-bottom: 160px;
+}
