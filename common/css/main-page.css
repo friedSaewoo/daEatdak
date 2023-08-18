@@ -1,5 +1,7 @@
+
 .main {
     width: 100%;
+    
 }
 
 .main-content-container {
@@ -17,6 +19,11 @@
     height: 100%;
 }
 
+.on {
+    font-size: 22px !important;
+    color: red !important;
+}
+
 .goods-section, .recently-goods-section {
     margin-top: 50px;
     width: 1024px;
@@ -29,7 +36,7 @@
 
 
 .goods-tap ul {
-    border: 2px solid red;
+    border: 2px solid rgb(186, 7, 7);
     /* box-sizing: border-box;
     padding: 5px; */
     width: 400px;
@@ -37,14 +44,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .goods-tap ul a {
+   
     font-size: 18px;
-    color: black;
+    color: gray;
 }
 
 .recently-title-tap {
+    
     display: flex;
     align-items: center;
     /* padding: 5px;

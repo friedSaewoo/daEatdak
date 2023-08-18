@@ -1,6 +1,4 @@
 /* header css */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
 
 .header {
     width: 100%;
@@ -62,6 +60,7 @@
 
 
 .user-container a {
+    
     font-size: 24px;
     color: gray;
 }
@@ -85,10 +84,14 @@
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
+.nav-ul-container ul li {
+    
+    border: 2px solid rebeccapurple;
+}
 .nav-ul-container ul a {
+    
     color: black;
     font-size: 18px;
 }
