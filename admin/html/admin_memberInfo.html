@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>admin_memberInfo</title>
-	<link rel="stylesheet" href="admin_main.css">
+    <title>daEatdak</title>
+	<link rel="stylesheet" href="../css/admin_main.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="../js/admin_memberInfo.js"></script>
+
 </head>
 <body>
     <main class="test">
@@ -12,7 +15,7 @@
             <div class="aside">
                 <div class="main_logo">
                     <a href="admin_main.html">
-                        <img class="" style="width: 140px;" src="./img/main_logo.png">
+                        <img class="" style="width: 140px;" src="../img/main_logo.png">
                     </a>
                 </div>
                 <a href="admin_memberInfo.html"><div class="admin_menu">회원정보</div></a>
@@ -35,7 +38,7 @@
                                     <th class="t_head">주소</th>
                                 </tr>
                             </thead>
-                            <tbody class="">
+                            <tbody id="table-list">
                                 <tr bgcolor="#D9E5FF">
                                     <td>001</td>
                                     <td>이중근</td>
@@ -61,15 +64,15 @@
                                     <td>평안남도 강서</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
-                                    <td>002</td>
-                                    <td>미나토</td>
+                                    <td>004</td>
+                                    <td>abc</td>
                                     <td>금빛섬광</td>
                                     <td>minato00@naver.com</td>
                                     <td>010-5825-7412</td>
                                     <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
-                                    <td>003</td>
+                                    <td>005</td>
                                     <td>안창호</td>
                                     <td>도산</td>
                                     <td>great1878@daum.net</td>
@@ -77,7 +80,7 @@
                                     <td>평안남도 강서</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
-                                    <td>002</td>
+                                    <td>006</td>
                                     <td>미나토</td>
                                     <td>금빛섬광</td>
                                     <td>minato00@naver.com</td>
@@ -85,7 +88,7 @@
                                     <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
-                                    <td>003</td>
+                                    <td>007</td>
                                     <td>안창호</td>
                                     <td>도산</td>
                                     <td>great1878@daum.net</td>
@@ -93,7 +96,7 @@
                                     <td>평안남도 강서</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
-                                    <td>002</td>
+                                    <td>008</td>
                                     <td>미나토</td>
                                     <td>금빛섬광</td>
                                     <td>minato00@naver.com</td>
@@ -101,7 +104,7 @@
                                     <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
-                                    <td>003</td>
+                                    <td>009</td>
                                     <td>안창호</td>
                                     <td>도산</td>
                                     <td>great1878@daum.net</td>
@@ -109,7 +112,7 @@
                                     <td>평안남도 강서</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
-                                    <td>002</td>
+                                    <td>010</td>
                                     <td>미나토</td>
                                     <td>금빛섬광</td>
                                     <td>minato00@naver.com</td>
@@ -117,7 +120,7 @@
                                     <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
-                                    <td>003</td>
+                                    <td>011</td>
                                     <td>안창호</td>
                                     <td>도산</td>
                                     <td>great1878@daum.net</td>
@@ -125,7 +128,7 @@
                                     <td>평안남도 강서</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
-                                    <td>002</td>
+                                    <td>012</td>
                                     <td>미나토</td>
                                     <td>금빛섬광</td>
                                     <td>minato00@naver.com</td>
@@ -133,7 +136,7 @@
                                     <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
-                                    <td>003</td>
+                                    <td>013</td>
                                     <td>안창호</td>
                                     <td>도산</td>
                                     <td>great1878@daum.net</td>
@@ -141,7 +144,7 @@
                                     <td>평안남도 강서</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
-                                    <td>002</td>
+                                    <td>014</td>
                                     <td>미나토</td>
                                     <td>금빛섬광</td>
                                     <td>minato00@naver.com</td>
@@ -149,25 +152,76 @@
                                     <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
-                                    <td>003</td>
+                                    <td>015</td>
                                     <td>안창호</td>
                                     <td>도산</td>
                                     <td>great1878@daum.net</td>
                                     <td>010-1878-1109</td>
                                     <td>평안남도 강서</td>
                                 </tr>
+                                <tr bgcolor="lightgray">
+                                    <td>016</td>
+                                    <td>미나토</td>
+                                    <td>금빛섬광</td>
+                                    <td>minato00@naver.com</td>
+                                    <td>010-5825-7412</td>
+                                    <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
+                                </tr>
+                                <tr bgcolor="#D9E5FF">
+                                    <td>017</td>
+                                    <td>안창호</td>
+                                    <td>도산</td>
+                                    <td>great1878@daum.net</td>
+                                    <td>010-1878-1109</td>
+                                    <td>평안남도 강서</td>
+                                </tr>
+                                <tr bgcolor="lightgray">
+                                    <td>018</td>
+                                    <td>미나토</td>
+                                    <td>금빛섬광</td>
+                                    <td>minato00@naver.com</td>
+                                    <td>010-5825-7412</td>
+                                    <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
+                                </tr>
+                                <tr bgcolor="#D9E5FF">
+                                    <td>019</td>
+                                    <td>안창호</td>
+                                    <td>도산</td>
+                                    <td>great1878@daum.net</td>
+                                    <td>010-1878-1109</td>
+                                    <td>평안남도 강서</td>
+                                </tr>
+                                <tr bgcolor="lightgray">
+                                    <td>020</td>
+                                    <td>미나토</td>
+                                    <td>금빛섬광</td>
+                                    <td>minato00@naver.com</td>
+                                    <td>010-5825-7412</td>
+                                    <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
+                                </tr>
+                                <tr bgcolor="#D9E5FF">
+                                    <td>021</td>
+                                    <td>안창호</td>
+                                    <td>도산</td>
+                                    <td>great1878@daum.net</td>
+                                    <td>010-1878-1109</td>
+                                    <td>평안남도 강서</td>
+                                </tr>
+
                             </tbody>
                         </table>
 
                     </div>
-                    <div style="margin: 15px auto;">
-                        <span><a href="">&lt;</a></span>
-                        <span><a href="#">1</a></span>&nbsp;&#47;
-                        <span><a href="#">2</a></span>&nbsp;&#47;
-                        <span><a href="#">3</a></span>
-                        <span><a href="">&gt;</a></span>
+                    <div class="pageing" style="margin: 15px auto;">
+                        <div class="pagination arrow">
+                            <div class="arrowPage pv" id="firstPage">&lt;&nbsp;&nbsp;</div>
+                            <div class="arrowPage nt" id="lastPage">&gt;</div>
+                        </div>
                     </div>
     
+
+
+
                     <div class="memberInfo_search">
                         <input type="text" id = "name" autocomplete="off">
                         <input type="button" id = "submit_button" value="검색">
