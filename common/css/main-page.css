@@ -18,6 +18,15 @@
 
 
 }
+
+.background{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(236,176,90);
+}
+
 .banner-section {
     position: relative;
 
