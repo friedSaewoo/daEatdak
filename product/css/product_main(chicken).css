@@ -111,10 +111,8 @@
 }
 
 .arrow{ 
-    /* border: 1px solid aqua; */
     margin: 0 20px;
     color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
-   
 }
 
