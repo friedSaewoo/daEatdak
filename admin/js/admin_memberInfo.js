@@ -2,22 +2,22 @@ function pagination(){
 	var req_num_row=5;	//한 페이지에 보여줄 리스트 수
 	var $tr=jQuery('tbody tr');	//테이블의 tr태그
 	var total_num_row=$tr.length;	//tr의 길이를 변수에 담기
-	var num_pages=0;	//페이지 수
+	var num_pages=0;	//페이징 수
 
-	if(total_num_row % req_num_row ==0){
+	if(total_num_row % req_num_row ==0){	// 테이블의 자식(tr)길이 나누기 한 페이지에 출력할 수가 0일 경우
 		num_pages=total_num_row / req_num_row;
 	}
-	if(total_num_row % req_num_row >=1){
+	if(total_num_row % req_num_row >=1){	// 테이블의 자식(tr)길이 나누기 한 페이지에 출력할 수가 1 이상일 경우
 		num_pages=total_num_row / req_num_row;
 		num_pages++;
 		num_pages=Math.floor(num_pages++);
 	}
 
-	for(var i=1; i<num_pages; i++){
-		jQuery('.pagination').append("<div class='paging'><a href=''>"+i+"</a>&nbsp;/&nbsp;</div>");
+	for(var i=1; i<num_pages; i++){	//페이지 수를 반복하여 Element코드(append)로 페이징 수 만큼 반복
+		jQuery('.pagination').append("<div class='paging_btn'><a href=''>"+i+"</a>&nbsp;/&nbsp;</div>");
 		jQuery('.pagination tr:nth-child(2)').addClass("active");
-		if(i == num_pages-1) {
-			jQuery('.pagination').append("<div class='paging'><a href=''>"+ num_pages +"&nbsp;&nbsp;</a></div>");
+		if(i == num_pages-1) {	//만약 반복한 수가 페이징 수 -1과 같으면 (최대)페이징 수 를 출력
+			jQuery('.pagination').append("<div class='paging_btn'><a href=''>"+ num_pages +"&nbsp;&nbsp;</a></div>");
 			alert("같")
 		}
 	
