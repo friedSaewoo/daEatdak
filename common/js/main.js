@@ -1,36 +1,37 @@
 $(".goods-container").each(function () {
-    var tabMenuDiv = $(this);
-    var menu_a = tabMenuDiv.find("a");
-    var panelDiv = tabMenuDiv.find("div.panel");
-    panelDiv.hide();
+    var tabMenuDiv2 = $(this);
+    var menu_a2 = tabMenuDiv2.find("a");
+    var panelDiv2 = tabMenuDiv2.find("div.panel");
+    panelDiv2.hide();
   
-    var panelOne;
-    var panelShow;
+    var panelOne2;
+    var panelShow2;
   
-    panelOne = menu_a.filter(".on");
-    panelShow = $(panelOne.attr("href"));
-    panelShow.show();
+    panelOne2 = menu_a2.filter(".on");
+    panelShow2 = $(panelOne2.attr("href"));
+    panelShow2.show();
   
-    menu_a.click(function (x) {
-      var currentA = $(this);
-      var currentA_panel = $(currentA.attr("href"));
+    menu_a2.click(function (x) {
+      var currentA2 = $(this);
+      var currentA2_panel = $(currentA2.attr("href"));
       x.preventDefault();
   
-      panelOne.removeClass("on");
-      currentA.addClass("on");
+      panelOne2.removeClass("on");
+      currentA2.addClass("on");
   
-      panelShow.hide();
-      currentA_panel.show();
+      panelShow2.hide();
+      currentA2_panel.show();
   
-      panelOne = currentA;
-      panelShow = currentA_panel;
+      panelOne2 = currentA2;
+      panelShow2 = currentA2_panel;
   
-      currentA.click(function () {
-        currentA_panel.children("ul").show();
+      currentA2.click(function () {
+        currentA2_panel.children("ul").show();
       });
     });
   });
 
+  
 
 
 
@@ -38,54 +39,90 @@ $(".goods-container").each(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let $slideBox = $('.recently-goods-contents ul');
-let $slideImgs = $('.recently-goods-contents ul img');
-let slideWidth = 1051;
-let currentIdx = 0;
-let slideCnt = $slideImgs.length;
-console.log('slideCnt : ' + slideCnt);
-checkEnd()
-
-$('.recently-right-button').stop().on('click', function () {
-    console.log('aa');
-    currentIdx++;
+  let $slideBox = $('.goods-contents ul');
+  let $slideImgs = $('.goods-contents ul img');
+  let slideWidth = 1051;
+  let currentIdx = 0;
+  let slideCnt = $slideImgs.length;
+  console.log('slideCnt : ' + slideCnt);
+  checkEnd()
+  
+  $('.goods-right-button').stop().on('click', function () {
+      console.log('aa');
+      currentIdx++;
+      console.log('currentIdx : ' + currentIdx);
+      $slideBox.css('left', -(currentIdx * slideWidth));
+      $slideBox.css('transition', '0.5s ease');
+      checkEnd()
+      });
+  
+  $('.goods-left-button').on('click', function () {
+    console.log('bbb');
+    currentIdx--;
     console.log('currentIdx : ' + currentIdx);
     $slideBox.css('left', -(currentIdx * slideWidth));
     $slideBox.css('transition', '0.5s ease');
     checkEnd()
+  });
+  
+  function checkEnd() {
+    if (currentIdx <= 0) {
+      $('.goods-left-button').css('display', 'none');
+    } else {
+      $('.goods-left-button').css('display', 'block');
+    }
+  
+    if (currentIdx==1) {
+      $('.goods-right-button').css('display', 'none');
+    } else {
+      $('.goods-right-button').css('display', 'block');
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+// 따끈따근 신상품 버튼 슬라이드 이동
+let $slideBox2 = $('.recently-goods-contents ul');
+let $slideImgs2 = $('.recently-goods-contents ul img');
+let slideWidth2 = 1051;
+let currentIdx2 = 0;
+let slideCnt2 = $slideImgs2.length;
+console.log('slideCnt : ' + slideCnt2);
+checkEnd2()
+
+$('.recently-right-button').stop().on('click', function () {
+    console.log('aa');
+    currentIdx2++;
+    console.log('currentIdx : ' + currentIdx2);
+    $slideBox2.css('left', -(currentIdx2 * slideWidth2));
+    $slideBox2.css('transition', '0.5s ease');
+    checkEnd2()
     });
 
 $('.recently-left-button').on('click', function () {
   console.log('bbb');
-  currentIdx--;
-  console.log('currentIdx : ' + currentIdx);
-  $slideBox.css('left', -(currentIdx * slideWidth));
-  $slideBox.css('transition', '0.5s ease');
-  checkEnd()
+  currentIdx2--;
+  console.log('currentIdx : ' + currentIdx2);
+  $slideBox2.css('left', -(currentIdx2 * slideWidth2));
+  $slideBox2.css('transition', '0.5s ease');
+  checkEnd2()
 });
 
-function checkEnd() {
-  if (currentIdx <= 0) {
+function checkEnd2() {
+  if (currentIdx2 <= 0) {
     $('.recently-left-button').css('display', 'none');
   } else {
     $('.recently-left-button').css('display', 'block');
   }
 
-  if (currentIdx==1) {
+  if (currentIdx2==1) {
     $('.recently-right-button').css('display', 'none');
   } else {
     $('.recently-right-button').css('display', 'block');

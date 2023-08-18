@@ -117,8 +117,9 @@
 }
 
 
-
-
+.active {
+    font-size: 30px !important;
+}
 
 .media-section {
     width: 1024px;
