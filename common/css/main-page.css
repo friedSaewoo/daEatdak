@@ -116,6 +116,7 @@
     width: 180px;
     height: 270px;
     color: black;
+    
 }
 
 
@@ -146,7 +147,6 @@
 }
 .recently-goods-contents ul li img:hover{
     
-
     scale: 1.1;
 }
 

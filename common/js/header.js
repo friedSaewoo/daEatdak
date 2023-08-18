@@ -1,4 +1,4 @@
-// 픽스메뉴 가로스크롤 기능
+// 픽스메뉴 가로스크롤 기능 추가.
 $(window).scroll(function () {
     $(".nav-fix-menu-container").css("left", 0 - $(this).scrollLeft());
   });
