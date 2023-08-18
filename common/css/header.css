@@ -155,7 +155,6 @@
 
 }
 .nav-fix-menu-content {
-    border: 10px solid darkgoldenrod;
     display: flex;
     align-items: center;
     width: 1024px;
@@ -206,12 +205,8 @@
     font-family: 'Single Day', cursive;
 }
 
-.nav-fix-menu-cart {
-    width: 45px;
-    height: 45px;
-    border: 2px solid red;
+.fix-search {
+    width: 550px;
+    justify-content: end;
 }
-.nav-fix-menu-cart a {
-    width: 100%;
-    height: 100%;
-}
+
