@@ -82,13 +82,13 @@
 .user-container a {
     display: block;
 
-    font-size: 24px;
+    font-size: 20px;
     color: gray;
 }
 
 .user-container span {
     color: black;
-    font-size: 35px;
+    font-size: 30px;
 }
 .nav-container{
     display: flex;
@@ -151,7 +151,7 @@
     border: 1px solid gray;
     border-radius: 5px;
     width: 315px;
-    height: 30px;
+    height: 25px;
     
 }
 
@@ -175,7 +175,7 @@
     top: 0;
     left: 0;
     z-index: 9999;
-    border: 2px solid red;
+    border-bottom: 2px solid red;
 
 }
 .nav-fix-menu-content {

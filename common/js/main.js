@@ -38,6 +38,8 @@ $(".goods-container").each(function () {
   let bannerWidth = 1024;
   let currentIndex = 0;
   let bannerCnt = $bannerImgs.length;
+  let backGroundColor = $('.background');
+
   console.log('bannerCnt : ' + bannerCnt);
   
   function bannerSlide(){
@@ -45,10 +47,18 @@ $(".goods-container").each(function () {
 
     $bannerBox.css('left', -(currentIndex * bannerWidth));
     currentIndex++;
+    
+    if(currentIndex==0 || currentIndex==1){
+      backGroundColor.css('background-color','rgb(236,176,90)');
+    }else if(currentIndex==2){
+      backGroundColor.css('background-color','blue');
 
-    if(currentIndex==3){
+    }else if(currentIndex==3){
       currentIndex=0;
+      backGroundColor.css('background-color','rgb(254,219,93)');
+
     }
+
 
   }
   function startTimer() {
@@ -66,6 +76,8 @@ startTimer();
 
 
   
+
+
 
 
 
