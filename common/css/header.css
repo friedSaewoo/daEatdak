@@ -1,5 +1,7 @@
 /* header css */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
+
 .header {
     width: 100%;
     height: 180px;
@@ -179,18 +181,22 @@
 }
 
 .nav-fix-menu ul {
+    margin-left: 20px;
     border: 2px solid darkcyan;
     width: 350px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .nav-fix-menu ul li {
     border: 2px solid darkkhaki;
     
+    
 }
 
 .nav-fix-menu ul li a {
+
     font-size: 18px;
     color:black
 }
