@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product_main_chicken(상품전체목록페이지)</title>
+    <title>다있닭</title>
     <link rel="stylesheet" href="/product/css/product_main(chicken).css">
     <link rel="stylesheet" href="/common/css/header.css">
     <link rel="stylesheet" href="/common/css/footer.css">
@@ -12,6 +12,8 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="/common/js/common.js" defer></script>
     <script src="/common/js/header.js" defer></script>
+    <script src="/product/js/pagemove.js" defer></script>
+    
 </head>
 <body>
     <div class="header-main-container">
@@ -171,19 +173,25 @@
                         </li>
                     </ul>
                     <div class="pageing">
-                        <div class="page-left">&lt;</div>
+                        <div class="arrow prev" onclick="">&lt;</div>
                         <ul class="page-box">
                             <li class="page-num">
-                                <a href="">1</a>
+                                <a class="page-change" href="http://127.0.0.1:5500/product/html/product_main(chickenpage)/product_main(chicken).html">
+                                    <span class="page">1</span>
+                                </a>
                             </li>
                             <li class="page-num">
-                                <a href="">2</a>
+                                <a class="page-change" href="http://127.0.0.1:5500/product/html/product_main(chickenpage)/product_main(chicken-2page).html">
+                                    <span class="page">2</span>
+                                </a>
                             </li>
                             <li class="page-num">
-                                <a href="">3</a>
+                                <a class="page-change" href="http://127.0.0.1:5500/product/html/product_main(chickenpage)/product_main(chicken-3page).html">
+                                    <span class="page">3</span>
+                                </a>
                             </li>
                         </ul>
-                        <div class="page-right">&gt;</div>
+                        <div class="arrow next">&gt;</div>
                     </div>
                 </div>
             </div>
