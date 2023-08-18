@@ -195,8 +195,14 @@
     
 }
 
-.nav-fix-menu ul li a {
-
-    font-size: 18px;
+.nav-fix-menu a {
+   
+    font-size: 21px;
     color:black
+}
+
+.nav-fix-menu h4 {
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
 }
