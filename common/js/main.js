@@ -32,6 +32,43 @@ $(".goods-container").each(function () {
   });
 
   
+  let interval=3000;
+  let $bannerBox = $('.banner-section');
+  let $bannerImgs = $('.banner-section ul img');
+  let bannerWidth = 1024;
+  let currentIndex = 0;
+  let bannerCnt = $bannerImgs.length;
+  console.log('bannerCnt : ' + bannerCnt);
+  
+  function bannerSlide(){
+    console.log('bannerCnt : ' + currentIndex);
+
+    $bannerBox.css('left', -(currentIndex * bannerWidth));
+    currentIndex++;
+
+    if(currentIndex==3){
+      currentIndex=0;
+    }
+
+  }
+  function startTimer() {
+    timer = setInterval(bannerSlide, interval);
+  
+  }
+  
+  function endTimer() {
+    clearInterval(timer);
+  
+  }
+  
+$bannerBox.hover(endTimer, startTimer);
+startTimer();
+
+
+  
+
+
+
 
 
 

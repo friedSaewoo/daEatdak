@@ -2,11 +2,12 @@
 
 .header {
     width: 100%;
-    height: 180px;
+    height: 150px;
+    border-bottom: 2px solid red;
+    
 }
 
 .header-container {
-    border: 2px solid red;
     width: 1024px;
     margin: 0 auto;
 }
@@ -16,10 +17,32 @@
     
 }
 .header-logo-container {
-    width: 250px;
-    height: 110px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 450px;
+    height: 100px;
 }
+.header-logo-container h4 {
+  
+    font-size: 60px;
 
+}
+.header-logo-container p {
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    position: absolute;
+    width: 65px;
+    height: 22px;
+    /* border: 2px solid red; */
+    left:45px;
+    top: 78px;
+    font-size: 18px;
+    color: gray;
+    
+
+    }
 
 .header-logo-container img {
     width: 100%;
@@ -27,22 +50,20 @@
 }
 
 .header-top {
-    border: 2px solid blueviolet;
     display: flex;
 }
 
 .user-container {
-    width: 774px;
-    border: 2px solid orange;
+    /* border: 2px solid red; */
+    width: 600px;
     display: flex;
     justify-content:end;
     
 }
 
 .user-container ul {
-    border: 2px solid darkgreen;
     width: 400px;
-    height: 110px;
+    height: 100px;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -54,13 +75,13 @@
     box-sizing: border-box;
     padding: 10px;
     width: 95px;
-    height: 90px;
-    border: 2px solid darkmagenta;
+    height: 80px;
 }
 
 
 .user-container a {
-    
+    display: block;
+
     font-size: 24px;
     color: gray;
 }
@@ -70,42 +91,43 @@
     font-size: 35px;
 }
 .nav-container{
-    border: 2px solid darkblue;
     display: flex;
     width: 1024px;
     height: 50px;
 }
 
 .nav-ul-container ul {
+    
     box-sizing: border-box;
     padding: 10px;
-    border: 2px solid darkred;
     width: 550px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.nav-ul-container ul li {
-    
-    border: 2px solid rebeccapurple;
-}
-.nav-ul-container ul a {
-    
+
+.nav-ul-container ul li a {
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.nav-ul-container ul li a h4 {
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
 }
 
 /* 메인메뉴 호버 시 색상 변경 */
 .nav-ul-container a:hover{
-    color: rgb(94, 180, 210) !important;
+    color: rgb(202, 46, 46) !important;
+   
 }
 
 
 
 /* 검색 부분 */
 .search-container {
-    border: 2px solid teal;
     width: 474px;
     display: flex;
     justify-content: end;
@@ -113,7 +135,6 @@
 
 .search-container form {
     box-sizing: border-box;
-    border: 2px solid darkorchid;
     width: 474px;
     display: flex;
     justify-content: end;
@@ -146,7 +167,6 @@
 
 .nav-fix-menu-container{
     z-index: 9999;
-    border: 5px solid blue;
    background-color: white;
     width: 100%;
     min-width: 1024px;
@@ -155,6 +175,7 @@
     top: 0;
     left: 0;
     z-index: 9999;
+    border: 2px solid red;
 
 }
 .nav-fix-menu-content {
@@ -169,13 +190,12 @@
 }
 
 .nav-fix-title {
-    border: 2px solid darkorchid;
     width: 100px;
     font-size: 40px;
     
     
 }
-.nav-fix-title h4 {
+.header-logo-container h4 ,.nav-fix-title h4 {
     color: rgb(202, 46, 46);
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
@@ -183,16 +203,15 @@
 
 .nav-fix-menu ul {
     margin-left: 20px;
-    border: 2px solid darkcyan;
     width: 350px;
     display: flex;
     justify-content: space-between;
     
 }
 
-.nav-fix-menu ul li {
-    border: 2px solid darkkhaki;
-    
+.nav-fix-menu ul a:hover {
+    color: rgb(202, 46, 46) !important;
+
     
 }
 
