@@ -82,13 +82,13 @@
 .user-container a {
     display: block;
 
-    font-size: 24px;
+    font-size: 20px;
     color: gray;
 }
 
 .user-container span {
     color: black;
-    font-size: 35px;
+    font-size: 30px;
 }
 .nav-container{
     display: flex;

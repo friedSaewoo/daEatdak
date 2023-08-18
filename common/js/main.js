@@ -60,8 +60,6 @@ $(".goods-container").each(function () {
     }
 
 
-
-
   }
   function startTimer() {
     timer = setInterval(bannerSlide, interval);

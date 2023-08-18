@@ -62,7 +62,6 @@
     margin-top: 50px;
     width: 1024px;
     height: 320px;
-    border: 2px solid rebeccapurple;
     position: relative;
     overflow: hidden;
 
@@ -70,7 +69,6 @@
 
 
 .goods-tap ul {
-    border: 2px solid rgb(186, 7, 7);
     /* box-sizing: border-box;
     padding: 5px; */
     width: 400px;
@@ -114,13 +112,23 @@
     /* box-sizing: border-box;
     padding: 5px; */
     text-align: end;
-    border: 2px solid red;
     width: 180px;
     height: 270px;
     color: black;
 }
 
+
+
+
+.goods-contents ul li a, .recently-goods-contents ul li a {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
 .goods-contents ul li img, .recently-goods-contents ul li img {
+    border-radius: 5px;
     width: 100%;
     height: 200px;
 }

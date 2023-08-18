@@ -6,14 +6,12 @@
 
 .footer-container {
   
-    border: 2px solid red;
     width: 1024px;
     margin: 0 auto;
 }
 
 .footer-content-container {
     position: relative;
-    border: 2px solid rgb(1, 217, 255);
     width: 1024px;
     height: 160px;
     margin: 0 auto;
@@ -23,7 +21,6 @@
 
 
 .footer-logo {
-    border: 2px solid red;
     width: 200px;
     height: 120px;
 }
@@ -40,12 +37,10 @@
 
 .footer-address {
 
-    border: 2px solid darkorange;
     width: 500px;
 }
 
 .footer-address dd, .footer-contact dd {
-    border: 2px solid darkcyan;
     margin-bottom: 5px;
 }
 
@@ -54,7 +49,6 @@
 .footer-contact {
     
     width: 200px;
-    border: 2px solid darkolivegreen
 }
 
 .footer-address dt, .footer-contact dt {
