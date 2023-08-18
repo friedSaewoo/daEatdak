@@ -27,11 +27,13 @@
                     <form id="login_form" name="login_form" action="" method="post" >
                         <div class="input-group">
                         <div class="input-text">
-                            <input type="text" placeholder="아이디 입력" maxlength="100" >
-                            <input type="text" placeholder="비밀번호 입력" maxlength="100" >
-                            <input type="text" placeholder="비밀번호 확인" maxlength="100" >
+                            
+                            <input type="text" placeholder="아이디 입력" maxlength="100" style="width: 350px;" >
+                            <button>중복확인</button>
+                            <input type="password" name ="userPW" id="pw" onchange="check_pw()" placeholder="비밀번호 입력" maxlength="100" >
+                            <input type="password" name="userPW2" id="pw2" onchange="check_pw()" placeholder="비밀번호 확인" maxlength="100" style="margin-bottom: -2px;">&nbsp;<span id="check"></span>
                             <div class="email">
-                                <input name="email1" type="text"> @
+                                <input name="email1" type="text" placeholder="이메일 입력"> @
                                 <span class="select-wrapper">
                                     <select name="email2" onChange="handleEmailSelect(this)">
                                         <option value="">선택하세요</option>
@@ -43,9 +45,6 @@
                                     <input name="email2_input" type="text" style="display: none;">
                                 </span>
                             </div>
-                            
-                                
-                            
                             <input type="text" placeholder="휴대폰 번호 입력" maxlength="100" >
                             <input type="text" placeholder="주소 입력" maxlength="100" >                           
                         </div>    
