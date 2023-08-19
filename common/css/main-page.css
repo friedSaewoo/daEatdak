@@ -85,13 +85,15 @@
 .goods-section, .recently-goods-section {
     margin-top: 50px;
     width: 1024px;
-    height: 320px;
     position: relative;
     overflow: hidden;
 
 }
 
-
+.goods-section{
+    /* border: 2px solid red; */
+    height: 400px;
+}
 .goods-tap ul {
     /* border: 2px solid red; */
     width: 450px;
@@ -132,7 +134,9 @@
     color: rgb(202, 46, 46) !important;
 }
 
-
+.recently-goods-section {
+    height: 320px;
+}
 .recently-title-tap {
     
     display: flex;
@@ -164,18 +168,32 @@
 }
 
 .goods-contents ul li, .recently-goods-contents ul li {
-    /* box-sizing: border-box;
-    /* padding: 5px; */ 
+   
     text-align: end;
     width: 180px;
-    height: 270px;
     color: black;
     
 }
 
+.goods-contents ul li{
+    /* border: 1px solid gray; */
+    height: 340px;
+}
 
+.goods-contents ul li img {
+    height: 250px;
+}
+.goods-contents ul li img:hover{
+    scale: 1.1;
+}
 
-
+.goods-zoom-container {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    width: 180px;
+    height: 250px;
+    overflow: hidden;
+}
 .goods-contents ul li a, .recently-goods-contents ul li a {
     
     color: black;
@@ -184,11 +202,39 @@
 }
 
 
+
+.goods-contents ul h5{
+    width: 175px;
+    padding-left: 2px;
+    text-align: start;
+    font-size: 17px;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: rgb(202, 46, 46) !important;
+ 
+
+}
+.goods-contents ul h6{
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    padding: 2px;
+    font-size: 16.5px;
+    width: 175px;
+}
+
+.goods-contents ul p {
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
 .goods-contents ul li img, .recently-goods-contents ul li img {
     transition: all 0.6s;
-
     border-radius: 8px;
     width: 100%;
+}
+
+.recently-goods-contents ul li img {
     height: 200px;
 }
 .zoom-container{
