@@ -13,7 +13,7 @@ main{
     height: 100%;
 }
 
-a{  
+a{
     text-align: center;
     text-decoration: none;
     color: black;
@@ -78,6 +78,10 @@ a{
     border-bottom:1px solid #ddd;
 }
 
+.board-list > div:last-child{
+    border-bottom: 1px solid #999;
+}
+
 .board-list > div > div{
     display: inline-block;
     padding: 15px 0;
@@ -104,6 +108,7 @@ a{
     width: 10%;
 }
 
+        /* 하단부 검색, 페이징, 글 등록 컨테이너 */
 .board-list-bottom{
     display: flex;
 }
@@ -119,6 +124,7 @@ a{
     align-content: center;
     font-size: 0;
     margin: 30px auto;
+    width: 40%;
 }
 
 .board-page a {
@@ -133,7 +139,7 @@ a{
     font-size: 15px;
 }
 
-.board-page a.bt { 
+.board-page a.bt {
     padding-top: 9px;
 }
 
@@ -153,15 +159,16 @@ a{
 }
 
 .board-search-container{
-    margin: auto;
+    margin: auto auto auto 50px;
+    width: 30%;
 }
 
 .bt-container{
     display: flex;
     align-items: center;
-    margin-left: auto;
+    justify-content: right;
     margin-right: 50px;
-    position: relative;
+    width: 30%;
 }
 
 .board-write{

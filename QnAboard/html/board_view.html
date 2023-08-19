@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>다잇닭</title>
-      <link rel="stylesheet" href="../css/board_list.css"/>
+      <link rel="stylesheet" href="../css/board_view.css"/>
       <!-- 폰트 -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet"/>
@@ -26,10 +26,88 @@
                <div class="title-text">문의 게시판</div>
                <p class="title-text-sub">자유롭게 질문할 수 있는 게시판 입니다.</p>
             </div>
-            <!-- 게시판 리스트 container -->
+            <div class="board-view">
+              <!-- 게시글 제목 -->
+              <div class="title">글의 제목이 들어갈 부분</div>
+              <!-- 게시글 정보 -->
+              <div class="info">
+                <!-- dl 리스트 사용해서 게시글 정보 나열 -->
+                <dl>
+                  <dt>번호</dt>
+                  <dd>1</dd>
+                </dl>
+                <dl>
+                  <dt>글쓴이</dt>
+                  <dd>김성찬</dd>
+                </dl>
+                <dl>
+                  <dt>작성일</dt>
+                  <dd>2023-08-18</dd>
+                </dl>
+                <dl>
+                  <dt>조회수</dt>
+                  <dd>1056</dd>
+                </dl>
+              </div>
+              <!-- 게시글 작성내용 -->
+              <div class="board-content">
+                글 내용이 들어갑니다<br>
+                글 내용이 들어갑니다<br>
+                글 내용이 들어갑니다<br>
+                글 내용이 들어갑니다<br>
+                글 내용이 들어갑니다<br>
+                글 내용이 들어갑니다<br>
+                글 내용이 들어갑니다<br>
+                글 내용이 들어갑니다
+              </div>
+              <!-- 게시글 버튼 컨테이너 -->
+              <div class="bt-container">
+                <a href="../html/board_list.html" class="board-home">글 목록</a>
+                <a href="#" class="board-fix">수정</a>
+                <a href="#" class="board-delete">삭제</a>
+              </div>
+              <div class="comment-container">
+                <div class="comment-title">댓글</div>
 
-              
-            
+                <div class="comment-content">
+                  <div class="admin-name">관리자1</div>
+                  <div class="admin-comment">답변내용이 들어갑니다</div>
+                  <div class="comment-btn-container">
+                    <a href="#" class="comment-fix-btn">수정</a>
+                    <a href="#" class="comment-del-btn">삭제</a>
+                  </div>
+                </div>
+                <div class="comment-content">
+                  <div class="admin-name">관리자2</div>
+                  <div class="admin-comment">답변내용이 들어갑니다</div>
+                  <div class="comment-btn-container">
+                    <a href="#" class="comment-fix-btn">수정</a>
+                    <a href="#" class="comment-del-btn">삭제</a>
+                  </div>
+                </div>
+                <div class="comment-content">
+                  <div class="admin-name">김성찬</div>
+                  <div class="admin-comment">답변내용이 들어갑니다</div>
+                  <div class="comment-btn-container">
+                    <a href="#" class="comment-fix-btn">수정</a>
+                    <a href="#" class="comment-del-btn">삭제</a>
+                  </div>
+                </div>
+                <div class="comment-content">
+                  <div class="admin-name">관리자1</div>
+                  <div class="admin-comment">답변내용이 들어갑니다</div>
+                  <div class="comment-btn-container">
+                    <a href="#" class="comment-fix-btn">수정</a>
+                    <a href="#" class="comment-del-btn">삭제</a>
+                  </div>
+                </div>
+
+              <div class="comment-write">
+                <textarea rows="4" cols="94" placeholder="댓글을입력하세요"></textarea>
+                <a href="#" class="comment-write-btn">댓글 등록</a>
+              </div>
+              </div>
+            </div>
         </div>
       </div>
     </main>

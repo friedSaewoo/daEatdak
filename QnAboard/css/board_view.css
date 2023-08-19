@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+main{
+    display: block;
+    height: 100%;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+textarea{
+    resize: none;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.board-container{
+    display: flex;
+    margin :30px auto ;
+    background-color: #f7f7f7;
+    width: 1024px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+.board-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 80%;
+    height: 90%;
+    margin:10px auto;
+    border: 1px solid black;
+}
+
+.board-title{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.title-text{
+    font-size: 40px;
+    margin-left:30px;
+}
+
+.title-text-sub{
+    font-size: 15px;
+    margin-left:30px;
+}
+.board-view{
+    width: 93%;
+    margin: 0 auto;
+    border-top:2px solid black;
+}
+.board-view > div.title{
+    padding: 20px 15px;
+    font-size: 30px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.board-view > .info {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #999;
+}
+dl{
+    display: flex;
+    margin-right: 20px;
+}
+.board-view .info dl dd {
+    margin-left: 10px;
+    color: #777;
+}
+
+.board-content{
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    line-height: 160%;
+    font-size: 15px;
+}
+
+.bt-container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.board-home{
+    width: 60px;
+    height: 25px;
+    border: 1px solid black;
+    margin-right: auto;
+}
+
+.board-fix{
+    width: 44px;
+    height: 25px;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+.board-delete{
+    width: 44px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+.comment-container{
+    margin-top: 50px;
+}
+
+.comment-title{
+    font-size: 25px;
+    border-bottom: 2px solid black;
+}
+
+.comment-content{
+    display: flex;
+    padding: 10px 0;
+    margin: auto 0;
+    border-bottom: 1px solid #999;
+}
+
+.comment-content:last-child{
+    border-bottom: 1px solid black;
+}
+
+.admin-name{
+    width: 70px;
+    margin-right: 40px;
+}
+.admin-comment{
+    width: 74%;
+}
+
+.comment-btn-container{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.comment-fix-btn{
+    font-size: 15px;
+    width: 44px;
+    height:25px;
+    padding: 0 5px;
+    border: 1px solid black;
+}
+.comment-del-btn{
+    font-size: 15px;
+    width: 44px;
+    height:25px;
+    padding: 0 5px;
+    border: 1px solid black;
+}
+
+.comment-write{
+    margin-top: 10px;
+    display: flex;
+    margin-bottom:10px
+}
+
+.comment-write-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto 0;
+    width: 10%;
+    border: 1px solid black;
+}
