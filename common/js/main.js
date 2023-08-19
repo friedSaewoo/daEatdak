@@ -1,3 +1,6 @@
+
+
+// 상품 섹션 탭메뉴 
 $(".goods-container").each(function () {
     var tabMenuDiv2 = $(this);
     var menu_a2 = tabMenuDiv2.find("a");
@@ -32,6 +35,62 @@ $(".goods-container").each(function () {
   });
 
   
+  //매인배너 
+  let interval=3000;
+  let $bannerBox = $('.banner-section');
+  let $bannerImgs = $('.banner-section ul img');
+  let $bannerCnt = $('.bannerCnt p');
+  let bannerWidth = 1024;
+  let currentIndex = 0;
+  let bannerCnt = $bannerImgs.length;
+  let backGroundColor = $('.background');
+  $bannerCnt.text(currentIndex+1 + '/' + bannerCnt);
+
+  console.log('bannerCnt : ' + bannerCnt);
+  
+  function bannerSlide(){
+
+    $bannerBox.css('left', -(currentIndex * bannerWidth));
+    currentIndex++;
+    
+    switch(currentIndex){
+      case 1: 
+        backGroundColor.css('background-color','rgb(236,176,90)');
+        $bannerCnt.text(currentIndex + '/' + bannerCnt);
+        break;
+
+      case 2: 
+        backGroundColor.css('background-color','rgb(255,91,82)');
+        $bannerCnt.text(currentIndex + '/' + bannerCnt);
+        break;
+      case 3: 
+        backGroundColor.css('background-color','rgb(254,219,93)');
+        $bannerCnt.text(currentIndex + '/' + bannerCnt);
+        currentIndex=0;
+        break;
+    }
+
+    console.log('currentIndex : ' + currentIndex);
+  }
+
+
+  function startTimer() {
+    timer = setInterval(bannerSlide, interval);
+  
+  }
+  
+  function endTimer() {
+    clearInterval(timer);
+  
+  }
+  
+//매인배너 영역에 마우스 호버 시에
+//인터벌 초기화(멈춤)
+$bannerBox.hover(endTimer, startTimer);
+startTimer();
+
+
+  
 
 
 
@@ -39,6 +98,11 @@ $(".goods-container").each(function () {
 
 
 
+
+
+
+
+//상품들 영역 화살표 좌우슬라이드
   let $slideBox = $('.goods-contents ul');
   let $slideImgs = $('.goods-contents ul img');
   let slideWidth = 1051;
