@@ -54,7 +54,7 @@
 }
 
 .on {
-    font-size: 22px !important;
+    font-size: 19px !important;
     color: red !important;
 }
 
@@ -69,9 +69,10 @@
 
 
 .goods-tap ul {
+    border: 2px solid red;
     /* box-sizing: border-box;
     padding: 5px; */
-    width: 400px;
+    width: 450px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -79,10 +80,34 @@
     
 }
 
+.goods-tap ul li:nth-child(1),
+.goods-tap ul li:nth-child(3),
+.goods-tap ul li:nth-child(5),
+.goods-tap ul li:nth-child(7)
+
+ {
+    width: 100%;
+    text-align: center;
+    border: 2px solid blue;
+}
+
+.goods-tap ul li:nth-child(2),
+.goods-tap ul li:nth-child(4),
+.goods-tap ul li:nth-child(6) {
+    
+    border: 2px solid red;
+    color: gray;
+}
+
 .goods-tap ul a {
    
     font-size: 18px;
     color: gray;
+}
+
+.goods-tap ul a h4 {
+    font-family: 'MaplestoryOTFBold';
+
 }
 
 .recently-title-tap {
@@ -111,7 +136,7 @@
 
 .goods-contents ul li, .recently-goods-contents ul li {
     /* box-sizing: border-box;
-    padding: 5px; */
+    /* padding: 5px; */ 
     text-align: end;
     width: 180px;
     height: 270px;

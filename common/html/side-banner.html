@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko" class="main">
+<head>
+
+<title> side-banner </title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function() {
+    var floatPosition = parseInt($("#floatMenu-container").css('top'));
+
+    $(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+    var attachedPosition = scrollTop + floatPosition + "px";
+
+
+ 
+    $("#floatMenu-container").stop().animate({"top" : attachedPosition}, 300);
+
+    }).scroll();
+
+    });
+
+    $('.top-button').click(function(){
+        $(window).scrollTop(0,0);
+        $("#floatMenu-container").hide();
+})
+</script>
+</head>
+
+
+<style>
+/* 우측 따라다니는 메뉴*/
+#floatMenu-container{
+    /* display: none; */
+    /* border: 2px solid red; */
+    position: absolute;
+    width: 80px;
+    right:3%;
+    top: 250px;
+    z-index:9999;
+}
+
+.float-menu ul {
+    width: 80px;
+    height: 100%;
+    background-color: white;    
+
+}
+
+.float-menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid red;
+    width: 80px;
+    height: 60px;
+}
+.float-menu ul li span {
+    font-size: 35px;
+    color: gray;
+}
+@media (max-width:1300px){
+    .float-menu{
+        display: none;
+    }
+}
+</style>
+
+
+<body>
+<div>
+    <div id="floatMenu-container">
+        <div class="float-menu">
+            <ul>
+                <li>
+                    <a href="/QnAboard/html/board_list.html">
+                        <span class="material-symbols-outlined">
+                            support_agent
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="float-button">
+            <button class="top-button" onclick="">TOP</button>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

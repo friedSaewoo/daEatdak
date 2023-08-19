@@ -1,5 +1,6 @@
 /* header css */
 
+
 .header {
     width: 100%;
     height: 150px;
@@ -66,7 +67,7 @@
     height: 100px;
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items:last baseline;
     text-align: center;
 }
 
@@ -109,13 +110,17 @@
 
 .nav-ul-container ul li a {
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .nav-ul-container ul li a h4 {
-    font-family: 'Gamja Flower', cursive;
+    /* font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
-    font-family: 'Single Day', cursive;
+    font-family: 'Single Day', cursive; */
+    /* font-family: 'ONE-Mobile-POP';     */
+    font-family: 'MaplestoryOTFBold';
+
+
 }
 
 /* 메인메뉴 호버 시 색상 변경 */
@@ -217,14 +222,16 @@
 
 .nav-fix-menu a {
    
-    font-size: 21px;
+    font-size: 18px;
     color:black
 }
 
 .nav-fix-menu h4 {
-    font-family: 'Gamja Flower', cursive;
+    /* font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
-    font-family: 'Single Day', cursive;
+    font-family: 'Single Day', cursive; */
+    font-family: 'MaplestoryOTFBold';
+
 }
 
 .fix-search {
