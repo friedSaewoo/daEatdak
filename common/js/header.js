@@ -20,6 +20,8 @@ $(window).scroll(function () {
     }else if(fixedMenuShow){ 
             $(".nav-fix-menu-container").show();
             $("#floatMenu-container").fadeIn();
+            $('.top-button').fadeIn();
+
     }else{
             $(".nav-fix-menu-container").hide();
             $("#floatMenu-container").fadeOut();
