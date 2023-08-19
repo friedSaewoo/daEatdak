@@ -14,8 +14,8 @@
     var attachedPosition = scrollTop + floatPosition + "px";
 
 
- 
-    $("#floatMenu-container").stop().animate({"top" : attachedPosition}, 300);
+    $("#floatMenu-container").css('top', attachedPosition);
+
 
     }).scroll();
 
@@ -24,6 +24,7 @@
     $('.top-button').click(function(){
         $(window).scrollTop(0,0);
         $("#floatMenu-container").hide();
+        $('.top-button').hide();
 })
 </script>
 </head>
@@ -32,28 +33,39 @@
 <style>
 /* 우측 따라다니는 메뉴*/
 #floatMenu-container{
-    /* display: none; */
-    /* border: 2px solid red; */
+    
     position: absolute;
     width: 80px;
     right:3%;
     top: 250px;
     z-index:9999;
 }
-
-.float-menu ul {
-    width: 80px;
+.float-menu img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
     height: 100%;
-    background-color: white;    
+}
+.float-menu ul {
+    
+    width: 80px;
+    height: 323px;
 
 }
+.float-menu ul li:nth-child(1) {
+    height: 200px;
+}
 
+.float-menu ul li:nth-child(2),
+.float-menu ul li:nth-child(3) {
+    background-color: rgba(128, 128, 128, 0.178);
+
+}
 .float-menu ul li {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    border: 2px solid red;
     width: 80px;
     height: 60px;
 }
@@ -61,9 +73,35 @@
     font-size: 35px;
     color: gray;
 }
+
+
+
+.float-button button {
+    background-color: rgba(128, 128, 128, 0.178);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+    font-family: 'MaplestoryOTFBold';
+
+}
 @media (max-width:1300px){
     .float-menu{
         display: none;
+    }
+
+    .float-button button {
+        z-index: 999;
+        background-color: rgb(243, 243, 243);
+        box-shadow: 2px 2px 2px gray;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom:170px;
     }
 }
 </style>
@@ -74,6 +112,10 @@
     <div id="floatMenu-container">
         <div class="float-menu">
             <ul>
+                <li>
+                    <img src="/common/img/sideBanner1.jpg" alt="사이드배너1"/>
+
+                </li>
                 <li>
                     <a href="/QnAboard/html/board_list.html">
                         <span class="material-symbols-outlined">

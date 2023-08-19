@@ -39,31 +39,41 @@ $(".goods-container").each(function () {
   let interval=3000;
   let $bannerBox = $('.banner-section');
   let $bannerImgs = $('.banner-section ul img');
+  let $bannerCnt = $('.bannerCnt p');
   let bannerWidth = 1024;
   let currentIndex = 0;
   let bannerCnt = $bannerImgs.length;
   let backGroundColor = $('.background');
+  $bannerCnt.text(currentIndex+1 + '/' + bannerCnt);
 
   console.log('bannerCnt : ' + bannerCnt);
   
   function bannerSlide(){
-    console.log('bannerCnt : ' + currentIndex);
 
     $bannerBox.css('left', -(currentIndex * bannerWidth));
     currentIndex++;
     
-    if(currentIndex==0 || currentIndex==1){
-      backGroundColor.css('background-color','rgb(236,176,90)');
-    }else if(currentIndex==2){
-      backGroundColor.css('background-color','blue');
+    switch(currentIndex){
+      case 1: 
+        backGroundColor.css('background-color','rgb(236,176,90)');
+        $bannerCnt.text(currentIndex + '/' + bannerCnt);
+        break;
 
-    }else if(currentIndex==3){
-      currentIndex=0;
-      backGroundColor.css('background-color','rgb(254,219,93)');
-
+      case 2: 
+        backGroundColor.css('background-color','rgb(255,91,82)');
+        $bannerCnt.text(currentIndex + '/' + bannerCnt);
+        break;
+      case 3: 
+        backGroundColor.css('background-color','rgb(254,219,93)');
+        $bannerCnt.text(currentIndex + '/' + bannerCnt);
+        currentIndex=0;
+        break;
     }
 
+    console.log('currentIndex : ' + currentIndex);
   }
+
+
   function startTimer() {
     timer = setInterval(bannerSlide, interval);
   
