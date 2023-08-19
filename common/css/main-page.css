@@ -81,10 +81,6 @@
     height: 450px;
 }
 
-.on {
-    font-size: 19px !important;
-    color: red !important;
-}
 
 .goods-section, .recently-goods-section {
     margin-top: 50px;
@@ -97,7 +93,7 @@
 
 
 .goods-tap ul {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 450px;
     height: 50px;
     display: flex;
@@ -112,29 +108,30 @@
 .goods-tap ul li:nth-child(7)
 
  {
-    width: 100%;
     text-align: center;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .goods-tap ul li:nth-child(2),
 .goods-tap ul li:nth-child(4),
 .goods-tap ul li:nth-child(6) {
     
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: gray;
 }
 
 .goods-tap ul a {
-   
-    font-size: 18px;
-    color: gray;
-}
-
-.goods-tap ul a h4 {
     font-family: 'MaplestoryOTFBold';
-
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.61);
 }
+
+.on {
+      
+    border-bottom: 2px solid rgb(202, 46, 46) ;
+    color: rgb(202, 46, 46) !important;
+}
+
 
 .recently-title-tap {
     
@@ -143,6 +140,12 @@
     /* padding: 5px;
     box-sizing: border-box; */
     height: 50px;
+}
+
+.recently-title-tap h3 {
+    font-size: 18px;
+    font-family: 'MaplestoryOTFBold';
+
 }
 
 .goods-contents, .recently-goods-contents {
@@ -237,9 +240,47 @@
 }
 
 
-.active {
+/* .active {
     font-size: 30px !important;
+} */
+
+
+
+
+.move-to-menu-button-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:10px;
+    right:0;
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(243, 245, 245);
 }
+
+.move-to-menu-button-section a {
+
+    color: gray;
+    font-size: 20px;
+}
+
+.move-to-menu-button-section h6 {
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .media-section {
     width: 1024px;
