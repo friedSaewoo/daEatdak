@@ -2,10 +2,11 @@
     border-top: 1px solid gray;
     min-width: 1024px;
     width: 100%;
+    position: relative;
+
 }
 
 .footer-container {
-  
     width: 1024px;
     margin: 0 auto;
 }
@@ -65,3 +66,18 @@
     width: 90px;
 }
 
+
+
+.side-menu-container {
+
+    position: absolute;
+    top: 20px;
+    
+    left:10%;
+}
+
+@media (max-width:1024px){
+    .QnA{
+        display: none;
+    }
+}
