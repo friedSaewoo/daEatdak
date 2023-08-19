@@ -54,7 +54,7 @@ a {
 table {
     margin: 0px auto;
 }
-.admen_memberInfo {
+.admin_memberInfo, .admin_productInfo {
     margin: 0px auto;
     text-align: center;
     background-color: rgb(94, 190, 231);
@@ -65,7 +65,6 @@ table {
 }
 
 .memberInfo_search {
-    border: 1px solid pink;
     float: right;
     vertical-align: bottom;
     align-items: flex-end;
@@ -76,6 +75,13 @@ table {
 .table-div {
     margin: 10px auto;
     overflow: auto;
+    border: 1px solid salmon;
+}
+
+.totalProdList {
+    width: 844px;
+    height: 300px;
+
 }
 
 .table-scroll {
@@ -130,3 +136,97 @@ table {
     cursor: pointer;
 }
 
+.PageName {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.productList:not(.btnUpd) {
+    display: flex;
+    border: 1px solid black;
+    height: 50px;
+    text-align: center;
+    line-height : 50px;
+    width: 800px;
+}
+
+
+
+.productUpdate {
+    border: 1px solid yellow;
+    float: right;
+}
+
+.totalProdList {
+    width: 100%;
+    
+}
+
+.btnUpd {
+    margin-top: 8px;
+    margin-right: 10px;
+    text-align: center;
+    width: 60px;
+    line-height : 30px;
+    float: right;
+    font-size: 15px;
+}
+
+li {
+    margin: 10px auto;
+
+}
+
+.ellipsis {
+    overflow: hidden;  		/* 을 사용해 영역을 감출 것*/
+    text-overflow: ellipsis;  	/* 로 ... 을 만들기 */
+    white-space: nowrap; 		/* 아래줄로 내려가는 것을 막기위해 */
+    word-break:break-all;
+    width: 80px;
+    height: 40px;
+}
+
+.productList span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.registerPage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.productRegist {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+.productRegist-text {
+    width: 300px;
+    height: 30px;
+}
+.productRegist-btn {
+    margin: 50px 20px auto;
+    text-align: right;
+}
+
+button {
+    background-color: aqua;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
