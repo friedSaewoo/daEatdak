@@ -19,23 +19,23 @@
                     </a>
                 </div>
                 <a href="admin_memberInfo.html"><div class="admin_menu">회원정보</div></a>
-                <a href="#"><div class="admin_menu">상품관리</div></a>
-                <a href="#"><div class="admin_menu">문의게시판</div></a>
+                <a href="admin_productInfo.html"><div class="admin_menu">상품관리</div></a>
+                <a href="admin_board.html"><div class="admin_menu">문의게시판</div></a>
             </div>
 
             <div class="admen_memberInfo">
-                <div style="margin: 50px auto;">회원 리스트</div>
+                <div class="PageName" style="margin: 50px auto;"><strong>회원 리스트</strong></div>
                 <div class="table-div">
                     <div class="table-scroll">
-                        <table  height="50">  <!--회원 정보 리스트 테이블-->
+                        <table border="2" height="50">  <!--회원 정보 리스트 테이블-->
                             <thead class="">
                                 <tr bgcolor="blue" class="t_head">
-                                    <th class="t_head">회원번호</th>
-                                    <th class="t_head">이름</th>
-                                    <th class="t_head">아이디</th>
-                                    <th class="t_head">이메일</th>
-                                    <th class="t_head">휴대폰</th>
-                                    <th class="t_head">주소</th>
+                                    <th class="t_head" style="width: 10%;">회원번호</th>
+                                    <th class="t_head" style="width: 8%;">이름</th>
+                                    <th class="t_head" style="width: 12%;">아이디</th>
+                                    <th class="t_head" style="width: 20%;">이메일</th>
+                                    <th class="t_head" style="width: 20%;">휴대폰</th>
+                                    <th class="t_head" style="width: 30%;">주소</th>
                                 </tr>
                             </thead>
                             <tbody id="table-list">
@@ -45,23 +45,23 @@
                                     <td>ljg797413</td>
                                     <td>twins797413@gmail.com</td>
                                     <td>010-1234-5678</td>
-                                    <td>서울특별시 마포구 월드컵북로 396, 15층</td>
+                                    <td class="memberEllipsis">서울특별시 마포구 월드컵북로 396, 15층</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
                                     <td>002</td>
                                     <td>미나토</td>
                                     <td>금빛섬광</td>
-                                    <td>minato00@naver.com</td>
+                                    <td >minato00@naver.com</td>
                                     <td>010-5825-7412</td>
-                                    <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
+                                    <td class="memberEllipsis">제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
                                     <td>003</td>
                                     <td>안창호</td>
                                     <td>도산</td>
-                                    <td>great1878@daum.net</td>
+                                    <td >great1878@daum.net</td>
                                     <td>010-1878-1109</td>
-                                    <td>평안남도 강서</td>
+                                    <td class="memberEllipsis">평안남도 강서</td>
                                 </tr>
                                 <tr bgcolor="lightgray">
                                     <td>004</td>
@@ -69,7 +69,7 @@
                                     <td>금빛섬광</td>
                                     <td>minato00@naver.com</td>
                                     <td>010-5825-7412</td>
-                                    <td>제주특별자치도 제주시 광양9길 10 제주시청</td>
+                                    <td class="memberEllipsis">제주특별자치도 제주시 광양9길 10 제주시청</td>
                                 </tr>
                                 <tr bgcolor="#D9E5FF">
                                     <td>005</td>
@@ -212,8 +212,9 @@
                         </table>
 
                     </div>
+
                     <div class="pageing" style="margin: 15px auto;">
-                        <div class="pagination arrow">
+                        <div class="pagination">
                             <div class="arrowPage pv" id="firstPage">&lt;&nbsp;&nbsp;</div>
                             <div class="arrowPage nt" id="lastPage">&gt;</div>
                         </div>
@@ -223,6 +224,10 @@
 
 
                     <div class="memberInfo_search">
+                        <select>
+                            <option name="id" value="id">아이디</option>
+                            <option name="name" value="name">이름</option>
+                        </select>
                         <input type="text" id = "name" autocomplete="off">
                         <input type="button" id = "submit_button" value="검색">
                     </div>
