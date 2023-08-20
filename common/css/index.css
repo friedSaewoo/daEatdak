@@ -1,6 +1,8 @@
 
+
 .main {
     width: 100%;
+    min-width: 1024px;
     
 }
 
@@ -42,7 +44,6 @@
     height: 450px;
 
 }
-
 
 .bannerCnt p {
     text-indent: 6px;
