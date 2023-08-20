@@ -25,7 +25,6 @@ a{
     background-color: #f7f7f7;
     width: 1024px;
     height: 100%;
-    min-height: 550px;
     border: 1px solid black;
 }
 
@@ -36,7 +35,6 @@ a{
     border: 1px solid black;
     width: 95%;
     height: 90%;
-    min-height: 530px;
     margin:10px auto;
     border: 1px solid black;
 }
@@ -65,14 +63,13 @@ a{
     border-top:2px solid black;
 }
 
-.board-list > div.top{
+.top{
+    width: 93%;
+    margin: 0 auto;
     padding-top: 10px 10px;
-    border-bottom:1px solid #999;
     display: flex;
-}
-
-.board-list > div.top {
-    font-size: 15px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .board-list > div {
@@ -90,23 +87,43 @@ a{
     text-align: center;
 }
 
-.board-list .num{
+.top .num{
     width: 10%;
 }
 
-.board-list .title{
+.top .title{
     width: 50%;
 }
 
-.board-list .writer{
-    width: 15%;
+.top .writer{
+    width: 10%;
 }
 
-.board-list .date{
+.top .date{
     width:20%
 }
 
-.board-list .count{
+.top .count{
+    width: 10%;
+}
+
+.post .num{
+    width: 10%;
+}
+
+.post .title{
+    width: 50%;
+}
+
+.post .writer{
+    width: 10%;
+}
+
+.post .date{
+    width:20%
+}
+
+.post .count{
     width: 10%;
 }
 
@@ -121,9 +138,10 @@ a{
     border:1px solid black;
 }
 
-.board-page a{
-    width: 26px;
-    height: 26px;
+.on {   
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
 }
 
 .board-page {
