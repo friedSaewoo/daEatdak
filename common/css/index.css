@@ -1,0 +1,564 @@
+
+.main {
+    width: 100%;
+    
+}
+
+.main-content-container {
+    
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+.side-banner-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+}
+
+.banner-container {
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+
+
+}
+
+.background{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    left: 0;
+    background-color: rgb(236,176,90);
+}
+
+.banner-section {
+    position: relative;
+
+    width: 1024px;
+    height: 450px;
+
+}
+
+
+.bannerCnt p {
+    text-indent: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 231, 231);
+    z-index: 999;
+    position: relative;
+    width: 90px;
+    height: 30px;
+    left: 900px;
+    bottom: 60px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: 'MaplestoryOTFBold';
+    letter-spacing: 5px;
+    color: rgb(182, 124, 37);
+
+}
+.banner-section ul {
+    
+    width: 3072px;
+    display: flex;
+    position: absolute;
+
+}
+.banner-section ul li {
+    
+    width: 1024px;
+}
+
+.banner-section img {
+
+    width: 100%;
+    height: 450px;
+}
+
+
+
+
+
+
+
+/* 카테고리별 상품 영역과 신상품 영역 공통 부분 */
+.goods-section, .recently-goods-section {
+    margin-top: 50px;
+    width: 1024px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.goods-tap h3, .recently-title-tap h3 {
+    font-size: 21px;
+    text-align: center;
+    font-family: 'MaplestoryOTFBold';
+    margin-bottom: 5px;
+    width: 100%;
+
+}
+
+.goods-contents, .recently-goods-contents {
+    width: 1024px;
+    height: 330px;
+    
+}
+.goods-contents ul, .recently-goods-contents ul {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 2075px;
+    position: absolute;
+    left: 0;
+}
+
+.goods-contents ul li, .recently-goods-contents ul li {
+   
+    text-align: end;
+    width: 180px;
+    color: black;
+    
+}
+
+.goods-contents ul li a, .recently-goods-contents ul li a {
+    
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.goods-contents ul li img, .recently-goods-contents ul li img {
+    transition: all 0.6s;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.goods-container, .recently-goods-container {
+    position: relative;
+}
+
+
+
+
+
+/* 카테고리별 상품 개별 설정 */
+.goods-section{
+    /* border: 2px solid red; */
+    height: 400px;
+}
+
+.goods-tap {
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+.goods-tap-center {
+    width: 1024px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.goods-tap h3 span {
+    font-size: 23px;
+    font-family: 'MaplestoryOTFBold';
+    color: rgb(202, 46, 46);
+}
+
+.goods-tap ul {
+    width: 500px;
+        
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.goods-tap ul li:nth-child(1),
+.goods-tap ul li:nth-child(3),
+.goods-tap ul li:nth-child(5),
+.goods-tap ul li:nth-child(7)
+
+ {
+    text-align: center;
+    /* border: 2px solid blue; */
+}
+
+.goods-tap ul li:nth-child(2),
+.goods-tap ul li:nth-child(4),
+.goods-tap ul li:nth-child(6) {
+    
+    /* border: 2px solid red; */
+    color: gray;
+}
+
+
+.goods-tap ul a {
+    font-family: 'MaplestoryOTFBold';
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.61);
+}
+
+.goods-contents ul {
+    top:73px
+}
+
+.goods-contents ul li{
+    /* border: 1px solid gray; */
+    height: 340px;
+}
+
+.goods-contents ul li img {
+    height: 250px;
+}
+.goods-contents ul li img:hover{
+    scale: 1.1;
+}
+
+.goods-zoom-container {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    width: 180px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.goods-contents ul h5{
+    width: 175px;
+    padding-left: 2px;
+    text-align: start;
+    font-size: 17px;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: rgb(202, 46, 46) !important;
+ 
+
+}
+.goods-contents ul h6{
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    padding: 2px;
+    font-size: 13.5px;
+    width: 175px;
+}
+
+.goods-contents ul p {
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+
+/* 카테고리 제목 선택 시 css설정 */
+.on {
+      
+    border-bottom: 2px solid rgb(202, 46, 46) ;
+    color: rgb(202, 46, 46) !important;
+}
+
+
+
+/* 신상품 영역 개별 설정 */
+.recently-goods-section {
+    height: 320px;
+}
+.recently-title-tap {
+    
+    display: flex;
+    align-items: center;
+    /* padding: 5px;
+    box-sizing: border-box; */
+    height: 50px;
+}
+
+ .recently-title-tap h3 span{
+    font-size: 24px;
+    color: rgb(202, 46, 46);
+    font-family: 'MaplestoryOTFBold';
+
+} 
+
+
+.recently-goods-contents ul {
+    top:50px
+}
+
+
+.recently-goods-contents ul li img {
+    height: 200px;
+}
+
+
+.zoom-container{
+    border-radius: 8px;
+
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.recently-goods-contents ul li img:hover{
+    
+    scale: 1.1;
+}
+
+
+
+
+/* 카테고리별 상품 영역과 신상품 영역 버튼 설정 */
+.goods-section-button, .recently-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 1px 1px gray;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.goods-section-button  {
+    top: 185px;
+}
+
+.recently-section-button  {
+    top: 140px;
+
+}
+.goods-section-button span, .recently-section-button span {
+    color: gray;
+}
+
+
+
+.goods-left-button, .recently-left-button {
+    text-indent: 6px;
+    left: -20px
+}
+
+
+.goods-right-button, .recently-right-button {
+    right: -20px;
+}
+
+
+
+
+
+
+/* 카테고리별 상품 전체 메뉴 보기 버튼 */
+.move-to-menu-button-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:35px;
+    right:0;
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(243, 245, 245);
+}
+
+.move-to-menu-button-section a {
+
+    color: gray;
+    font-size: 20px;
+}
+
+.move-to-menu-button-section h6 {
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 조리법 영역 */
+.media-section {
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.media-section h3{
+    font-family: 'MaplestoryOTFBold';
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+}
+
+.media-section span {
+    color: rgb(202, 46, 46);
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 25px;
+    margin-right: 6px;
+}
+.media-taps {
+    
+    border: 1px solid gray;
+    border-radius: 7px;
+    display: flex;
+}
+
+.media-tap {
+    
+    border-radius: 6px;
+    width: 640px;
+    height: 100%;
+}
+
+.media-section video {
+    border: none;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.media-material {
+
+    box-sizing: border-box;
+    padding: 20px;
+    width: 380px;
+    height: 100%;
+    border-radius: 6px;
+}
+.media-material h3{
+    display: flex;
+    justify-content: start;
+    width: 350px;
+}
+
+.media-material dd{
+    
+    height: 160px;
+    display: flex;
+    border: 1px solid gray
+    
+}
+.material-detail {
+    margin-left: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.media-material p {
+
+}
+.media-material p:nth-child(1){
+    color: rgb(202, 46, 46);
+    padding: 10px;
+    font-size: 18px;
+    height: 15px;
+    font-weight: bold;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+}
+
+.media-material p:nth-child(2){
+    padding: 10px;
+    height: 85px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'MaplestoryOTFBold';
+
+}
+.media-material p:nth-child(3){
+
+    font-size: 18px;
+    width: 165px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    left: 0px;
+    top: 3px;
+    background-color: rgb(202, 46, 46);
+    
+}
+.media-material p a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    font-family: 'MaplestoryOTFBold';
+    color: rgb(243, 243, 243);
+    font-weight: normal;
+    font-size: 13px;
+}
+.media-material dl {
+    margin-bottom:  10px;
+    width: 350px;
+}
+.media-material dt {    
+    font-family: 'MaplestoryOTFBold';
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+
+.media-img-container {
+    width: 170px;
+    height: 150px;
+}
+
+.media-img-container img {
+    padding: 5px;
+    width: 100%;
+    height: 150px
+}
+
+.extra-material {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    width: 348px;
+    height: 100%;
+}
+.extra-material p:first-child
+{   height: 100%;
+    font-family: 'MaplestoryOTFBold';
+    font-size: 15px;
+    color: rgb(177, 176, 176);
+
+}
+
+.extra-material p span {
+    color: rgb(0, 0, 0);
+    font-family: 'MaplestoryOTFBold';
+    font-size: 17px;
+}

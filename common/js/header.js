@@ -19,7 +19,7 @@ $(window).scroll(function () {
       $(".nav-fix-menu-container").hide();
     }else if(fixedMenuShow){ 
             $(".nav-fix-menu-container").show();
-            $("#floatMenu-container").fadeIn();
+            $("#floatMenu-container").show();
             $('.top-button').fadeIn();
 
     }else{
