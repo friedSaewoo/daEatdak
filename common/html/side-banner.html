@@ -33,7 +33,7 @@
 <style>
 /* 우측 따라다니는 메뉴*/
 #floatMenu-container{
-    
+    overflow: hidden;
     position: absolute;
     width: 80px;
     right:3%;
@@ -41,6 +41,7 @@
     z-index:9999;
 }
 .float-menu img {
+   
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
@@ -111,10 +112,10 @@
 <div>
     <div id="floatMenu-container">
         <div class="float-menu">
+            <!-- <div class="banner-change-section"></div> -->
             <ul>
                 <li>
                     <img src="/common/img/sideBanner1.jpg" alt="사이드배너1"/>
-
                 </li>
                 <li>
                     <a href="/QnAboard/html/board_list.html">
@@ -137,8 +138,5 @@
         </div>
     </div>
 </div>
-
-
-
 </body>
 </html>
