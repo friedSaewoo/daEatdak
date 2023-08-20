@@ -1,17 +1,18 @@
 .main{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
 }
-
 .idfind-container {
     width: 1024px;
     height: 100%;
+    background-color: rgb(250, 250, 250);
 }
 
 .idfind-area {
     width: 420px;
-    height: auto;
+    height: 500px;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
 .idfind-greeting {
@@ -33,6 +34,18 @@
     height: 40px;
     margin-top: 15px;  
     background-color: RGB(94,190,231);
+    border: 0px solid white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-back button{
+    width : 100%;
+    height: 40px;
+    margin-top: 15px;  
+    background-color: RGB(94,190,231);
+    border: 0px solid white;
+    font-weight: 700;
     cursor: pointer;
 }
 

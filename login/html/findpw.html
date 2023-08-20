@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="/common/js/common.js" defer></script>
+    <script src="/login/js/findpw.js"></script>
     <script src="/common/js/header.js" defer></script>
     
     <title>다잇닭</title>
@@ -22,12 +23,12 @@
 	</div>
 	<div class="main">
 		<main>
-			<div class="pwfind-contanier">
+			<div class="pwfind-container">
                 <div class="pwfind-area">
                     <div class="pwfind-greeting">
                         <strong class="txt">비밀번호 찾기</strong>
                     </div>
-                    <form id="login_form" name="login_form" action="" method="post" >
+                    <form id="findpw_form" name="findpw_form" action="" method="post" >
                         <div class="input-group">
                         <div class="input-text">
                             <input type="text" placeholder="아이디 입력" maxlength="100" >
@@ -37,6 +38,9 @@
                         </div>
                         <div class="button-submit">
                             <button>확인</button>                       
+                        </div>
+                        <div class="login-back">
+                            <button type="button" onclick="location.href='/login/html/login.html' ">로그인 창으로 돌아가기</button>
                         </div>
                         <h2 id="txt">회원 비밀번호 출력 영역</h2>
                             
