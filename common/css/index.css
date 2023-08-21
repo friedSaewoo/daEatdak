@@ -78,8 +78,7 @@
 .goods-section, .recently-goods-section {
     margin-top: 50px;
     width: 1024px;
-    position: relative;
-    overflow: hidden;
+  
 
 }
 
@@ -94,7 +93,7 @@
 
 .goods-contents, .recently-goods-contents {
     width: 1024px;
-    height: 330px;
+    
     
 }
 .recently-goods-contents ul {
@@ -107,7 +106,7 @@
 }
 
 .recently-goods-contents ul li {
-   
+    
     text-align: end;
     width: 180px;
     color: black;
@@ -115,7 +114,8 @@
 }
 
 .goods-contents ul li a, .recently-goods-contents ul li a {
-    
+   display: block;
+   width: 180px;
     color: black;
     font-size: 15px;
     font-weight: 600;
@@ -196,6 +196,10 @@
     font-size: 18px;
     color: rgba(128, 128, 128, 0.61);
 }
+.goods-contents{
+    height: 700px;
+
+}
 .goods-contents ul {
     margin-top: 20px;
     display: grid;
@@ -259,8 +263,15 @@
 
 
 /* 신상품 영역 개별 설정 */
+.recently-goods-container {
+    width: 1024px;
+    height: 390px;
+}
+
 .recently-goods-section {
-    height: 320px;
+    position: relative;
+    overflow: hidden;
+    height: 350px;
 }
 .recently-title-tap {
     
@@ -283,12 +294,27 @@
     top:50px
 }
 
-
+.recently-goods-contents li {
+    height: 290px;
+}
 .recently-goods-contents ul li img {
     height: 200px;
 }
 
+.recently-goods-contents p{
+    height: 45px;
+    
+}
+.recently-goods-contents span {
+    color: rgb(202, 46, 46);
 
+    font-size: 17px;
+    display: flex;
+    justify-content: start;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+}
 .zoom-container{
     border-radius: 8px;
 
