@@ -18,18 +18,38 @@ function check_pw(){
         }
  
 //이메일 선택 부분
-        function handleEmailSelect(selectElement) {
-            var email2Input = selectElement.nextElementSibling.querySelector('input[name="email2_input"]');
-            var directOption = selectElement.querySelector('option[value="direct"]');
-            
-            if (selectElement.value === "direct") {
-                email2Input.style.display = "inline-block";
-                email2Input.value = ""; // Clear any existing value
-                email2Input.removeAttribute("readonly");
-                directOption.textContent = ""; // Hide the "직접입력" option text
-            } else {
-                email2Input.style.display = "none";
-                email2Input.setAttribute("readonly", "readonly");
-                directOption.textContent = "직접입력"; // Show the "직접입력" option text
-            }
+function selectEmail(ele){
+    var $ele = $(ele);
+    var $email2 = $('input[name=email2]');
+
+    // '1'인 경우 직접입력
+    if($ele.val() == "1"){
+        $email2.attr('readonly', false);
+        $email2.val('');
+    } else {
+        $email2.attr('readonly', true);
+        $email2.val($ele.val());
+    }
+}
+
+//아이디 중복확인 
+
+window.onload = function () {
+    // 아이디 중복 체크
+    document.getElementById("id_request").onclick = function () {
+        var inputId = document.getElementById("id").value; // 입력한 아이디 값
+
+        // 임의의 데이터 값
+        var mockData = "admin"; // 중복된 아이디라고 가정
+
+        var messageElement = document.getElementById("here");
+
+        if (inputId === mockData) {
+            messageElement.textContent = "중복된 아이디입니다.";
+            messageElement.style.color = "red";
+        } else {
+            messageElement.textContent = "사용가능한 아이디입니다.";
+            messageElement.style.color = "blue";
         }
+    };
+};
