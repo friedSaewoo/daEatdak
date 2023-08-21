@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     //첫 화면 표시
     displayData();
 
-
-
     function displayData() {
         //게시글 목록이 동적으로 보여질 요소
         const boardList = document.querySelector('.board-list');
@@ -26,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const display = Array.from(postElements).slice(start, end);
         //display에 있는 요소들을boardList에 추가하여 게시글 표시
 
-    
         display.forEach(item => {
             boardList.appendChild(item);
         });
@@ -42,7 +39,6 @@ function createButtons() {
     ButtonContainer.innerHTML = '';
     //"게시글 항목 수 / 보여질 게시글 수" 를 올림하여 변수에 저장
     const totalPages = Math.ceil(postElements.length / page_num);
-
     //이전 버튼 동적 생성
     const prevButton = document.createElement('a');
     //버튼 텍스트 추가
@@ -65,15 +61,13 @@ function createButtons() {
         const button = document.createElement('a');
         button.textContent = i;
         button.classList.add('num');
-
-
-
+        console.log(i +"버튼 생성");
         button.href = '#';
+
         button.addEventListener('click', () => {
             currentPage = i;
             displayData();
         });
-
 
         ButtonContainer.appendChild(button);
     }
@@ -90,7 +84,20 @@ function createButtons() {
         }
     });
     ButtonContainer.appendChild(nextButton);
+    
 }
+// 페이지 On 처리
+// function buttonOn(){
+//     console.log(currentPage);
+//     const onButton = document.querySelector('num');
+//     onButton.forEach((button,index)=>{
+//         if(index+1 == currentPage){
+//             button.classList.add('on');
+//         }else{
+//             button.classList.remove('on');
+//         }
+//     })
+// };
 
     createButtons();
 });
