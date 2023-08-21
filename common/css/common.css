@@ -32,7 +32,21 @@
     font-family: 'IBM Plex Sans KR', sans-serif;
 
 }
+.side-banner-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1500px;
+}
 
+.banner-container {
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+
+
+}
 /* 푸터 하단 고정을 위한 css */
 .header-main-container {
     height: auto;
