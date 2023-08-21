@@ -1,5 +1,5 @@
 function pagination(){
-	var req_num_row=5;	//한 페이지에 보여줄 리스트 수
+	var req_num_row=7;	//한 페이지에 보여줄 리스트 수
 	var $li=$('ul li');	//테이블의 tr태그
 	var total_num_row=$li.length;	//tr의 길이를 변수에 담기
 	var num_pages=0;	//페이징 수
@@ -85,11 +85,8 @@ function productDel() {
     })
 
     $(".upload").click(function() {
-        var up = confirm("수정 하시겠습니까?");
         link = "admin_proInfoUp.html"
-        if(up) {
             location.href = link;
-        }
     })
 
     $(".ins").click(function() {
@@ -100,6 +97,7 @@ function productDel() {
             location.href = link;
         }
     })
+
 
 
 }

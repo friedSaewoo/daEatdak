@@ -11,7 +11,7 @@ a {
 }
 .section-container{
     margin: 5px 5px 5px 5px;
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
 }
@@ -57,7 +57,6 @@ table {
 .admin_memberInfo, .admin_productInfo {
     margin: 0px auto;
     text-align: center;
-    background-color: rgb(94, 190, 231);
     border: 1px solid yellow;
     align-items: center;
     height: 100%;
@@ -74,19 +73,20 @@ table {
 
 .table-div {
     margin: 10px auto;
+    height: 75%;
     overflow: auto;
     border: 1px solid salmon;
 }
 
 .totalProdList {
     width: 844px;
-    height: 300px;
+    height: 80%;
 
 }
 
 .table-scroll {
     width: 844px;
-    height: 300px;
+    height: 80%;
     overflow: auto;
   }
   .table-scroll::-webkit-scrollbar {
@@ -183,6 +183,34 @@ li {
 
 }
 
+.addrEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    width: 250px;
+    height: 20px;
+}
+
+.mailEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    width: 150px;
+    height: 20px;
+}
+
+.boardEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break:break-all;
+    width: 300px;
+    height: 20px;
+}
+
+
 .ellipsis {
     overflow: hidden;  		/* 을 사용해 영역을 감출 것*/
     text-overflow: ellipsis;  	/* 로 ... 을 만들기 */
@@ -230,3 +258,15 @@ button:hover {
     background-color: lightgray;
     cursor: pointer;
 }
+
+.pagination div {
+    width: 15px;
+    background-color: cadetblue;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.paging_btn:hover {
+    background-color: aqua;
+}
+
