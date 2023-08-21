@@ -15,33 +15,40 @@
     <title>다잇닭</title>
 </head>
 <body>
+    <!--사이드배너 고정을 위한 추가 영역-->
+<div class="side-banner-container"> <!--   <-- <----추가사항-->
+    <!-- 사이드 배너 영역 -->
+    <div class="side-banner">
+    </div>
+</div>
+
     <div class="header-main-container">
 	<div class="header">
 	</div>
 	<div class="main">
 		<main>
-			<div class="signup-contanier">
+			<div class="signup-container">
                 <div class="signup-area">
                     <div class="signup-greeting">
                         <strong class="txt">회원가입을 진행해주세요!</strong>
                     </div>
                     <form id="login_form" name="login_form" action="" method="post" >
                         <div class="input-group">
-                        <div class="input-text">
-                            
-                            <input type="text" placeholder="아이디 입력" maxlength="100" style="width: 350px;" >
-                            <button>중복확인</button>
+                        <div class="input-text">                            
+                            <input type="text" id="id" placeholder="아이디 입력" maxlength="100" style="width: 330px; margin-bottom: -2px;">
+                            <input type="button" style="width: 80px; margin-bottom: -2px;" id="id_request" value="중복확인"></button>&nbsp;<span id="here"></span>
                             <input type="password" name ="userPW" id="pw" onchange="check_pw()" placeholder="비밀번호 입력" maxlength="100" >
                             <input type="password" name="userPW2" id="pw2" onchange="check_pw()" placeholder="비밀번호 확인" maxlength="100" style="margin-bottom: -2px;">&nbsp;<span id="check"></span>
                             <div class="email">
-                                <input name="email1" type="text" placeholder="이메일 입력"> @
-                                <span class="select-wrapper">
-                                    <select name="email2" onChange="handleEmailSelect(this)">
+                                <input name="email1" type="text" placeholder="이메일 입력"> @ <input name="email2" type="text">
+                                <select name="select_email" onChange="selectEmail(this)">
                                         <option value="">선택하세요</option>
                                         <option value="naver.com">naver.com</option>
-                                        <option value="gmail.com">gmail.com</option>
-                                        <option value="hanmail.com">hanmail.com</option>
-                                        <option value="direct">직접입력</option>
+                                        <option value="google.com">google.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="kakao.com">kakao.com</option>
+                                        <option value="1">직접입력</option>
                                     </select>
                                     <input name="email2_input" type="text" style="display: none;">
                                 </span>
@@ -50,7 +57,7 @@
                             <input type="text" placeholder="주소 입력" maxlength="100" >                           
                         </div>    
                         <div class="button-signup">
-                            <button>가입완료</button>             
+                            <button type="button" onclick="location.href='/login/html/login.html' ">가입완료</button>             
                         </div>    
                     </form>                   
                 </div>
@@ -58,27 +65,7 @@
         </main>                    
     </div>
     </div>        
-	
-
-	
 	<div class="footer">
 	</div>
-<script>
-    function handleEmailSelect(selectElement) {
-        var email2Input = selectElement.nextElementSibling.querySelector('input[name="email2_input"]');
-        var directOption = selectElement.querySelector('option[value="direct"]');
-        
-        if (selectElement.value === "direct") {
-            email2Input.style.display = "inline-block";
-            email2Input.value = ""; // Clear any existing value
-            email2Input.removeAttribute("readonly");
-            directOption.textContent = ""; // Hide the "직접입력" option text
-        } else {
-            email2Input.style.display = "none";
-            email2Input.setAttribute("readonly", "readonly");
-            directOption.textContent = "직접입력"; // Show the "직접입력" option text
-        }
-    }
-</script>
 </body>
 </html>

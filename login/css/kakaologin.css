@@ -1,17 +1,19 @@
 .main{
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
 }
 
 .login-container {
+    background-color: rgb(255, 255, 255);
     width: 1024px;
-    height: 100%;
+    
 }
 
 .login-area {
     width: 500px;
     height: 800px;
     margin: 0 auto;
-    border: 1px solid black;
     text-align: center;
 }
 
@@ -35,21 +37,17 @@
 }
 
 #login_form{
-    border: 2px solid red;
     display: flex;
     width: 400px;
-    height: 600px;
-    
+    height: 600px;   
     flex-direction: column;
     text-align: center;
 }
 .input-group { 
-    border: 4px solid #00b7ff;
     height: 400px;   
 }
 
 .input-text {   
-    border: 1px solid rgb(177, 177, 177);
     width: 100%;
 }
 .input-text input{
