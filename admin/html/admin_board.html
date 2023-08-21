@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="../css/admin_main.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="../js/admin_memberInfo.js"></script>
+    <script src="../js/admin_board.js"></script>
 
 </head>
 <body>
@@ -15,7 +16,7 @@
             <div class="aside">
                 <div class="main_logo">
                     <a href="admin_main.html">
-                        <img class="" style="width: 140px;" src="../img/main_logo.png">
+                        <img class="" style="width: 140px;" src="../img/mainLogo.png">
                     </a>
                 </div>
                 <a href="admin_memberInfo.html"><div class="admin_menu">회원정보</div></a>
@@ -24,150 +25,180 @@
             </div>
 
             <div class="admen_memberInfo">
-                <div class="PageName" style="margin: 50px auto;"><strong>회원 리스트</strong></div>
+                <div class="PageName" style="margin: 50px auto;">
+                    <strong>문의 게시판 리스트(QnA)</strong>
+                </div>
+
+                <div style=" margin: 5px auto; text-align: right;">
+                    <select name="memListNum">
+                        <option value="10">10개</option>
+                        <option value="20">20개</option>
+                        <option value="30">30개</option>
+                    </select>
+                </div>
+
                 <div class="table-div">
                     <div class="table-scroll">
                         <table border="2" height="50">  <!--회원 정보 리스트 테이블-->
                             <thead class="">
                                 <tr bgcolor="blue" class="t_head">
-                                    <th class="t_head" style="width: 10%;">게시번호</th>
-                                    <th class="t_head" style="width: 20%;">문의 제목</th>
-                                    <th class="t_head" style="width: 10%;">작성자</th>
-                                    <th class="t_head" style="width: 10%;">작성 일자</th>
+                                    <th class="t_head" style="width: 120px;">게시번호</th>
+                                    <th class="t_head" style="width: 320px;">문의 제목</th>
+                                    <th class="t_head" style="width: 120px;">작성자</th>
+                                    <th class="t_head" style="width: 150px;">작성 일자</th>
+                                    <th class="t_head" style="width: 100px;">답변 버튼</th>
                                 </tr>
                             </thead>
                             <tbody id="table-list">
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>001</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button class="boardBtn">답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>002</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button class="boardBtn">답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>003</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button class="boardBtn">답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>004</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button class="boardBtn">답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>005</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle"><div class="boardEllipsis">엄청나게 길게 쓰는 게시판 문의길 QnA 진행 상품 하나 질문 두개 질문</div></td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button class="boardBtn">답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>006</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>007</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>008</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>009</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>010</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>011</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>012</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>013</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>014</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>015</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>016</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>017</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>018</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>019</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="lightgray">
+                                <tr bgcolor="lightgray" class="boardList">
                                     <td>020</td>
-                                    <td>다이어트 칼로리</td>
-                                    <td>미나토</td>
+                                    <td class="boardTitle">다이어트 칼로리</td>
+                                    <td class="writerName">미나토</td>
                                     <td>오늘</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-                                <tr bgcolor="#D9E5FF">
+                                <tr bgcolor="#D9E5FF" class="boardList">
                                     <td>021</td>
-                                    <td>문의 제목이양</td>
-                                    <td>김고은</td>
+                                    <td class="boardTitle">문의 제목이양</td>
+                                    <td class="writerName">김고은</td>
                                     <td>2023-08-19</td>
+                                    <td><button>답변하기</button></td>
                                 </tr>
-
-
                             </tbody>
                         </table>
-
                     </div>
                     
                     <div class="pageing" style="margin: 15px auto;">
@@ -176,17 +207,16 @@
                             <div class="arrowPage nt" id="lastPage">&gt;</div>
                         </div>
                     </div>
-    
-
-
 
                     <div class="memberInfo_search">
-                        <select>
-                            <option name="id" value="id">아이디</option>
-                            <option name="name" value="name">이름</option>
+                        <label>검색을 선택하세요.</label>
+                        <select name="selectSearch_board" id="selectSearch_board">
+                            <option name="boardList" value="title">제목</option>
+                            <option name="boardList" value="writer">작성자</option>
                         </select>
-                        <input type="text" id = "name" autocomplete="off">
-                        <input type="button" id = "submit_button" value="검색">
+                        <input type="text" id = "searchBoard" autocomplete="off" placeholder="아이디/이름을 입력하세요." onkeyup="filter_board()">
+                        <button class="boardSearchBtn" style="margin-right: 5px;">검색</button>
+                        
                     </div>
 
                 </div>
