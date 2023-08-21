@@ -14,6 +14,13 @@
     <title>다잇닭</title>
 </head>
 <body>
+    <!--사이드배너 고정을 위한 추가 영역-->
+<div class="side-banner-container"> <!--   <-- <----추가사항-->
+    <!-- 사이드 배너 영역 -->
+    <div class="side-banner">
+    </div>
+</div>
+
     <div class="header-main-container">
 
 	
@@ -27,13 +34,18 @@
                         <strong class="txt">회원가입 방식을 선택해주세요!</strong>
                     </div>
                     <form id="login_form" name="login_form" action="" method="post" >
-                        <div class="input-group">
-                        
+                        <div class="input-group">                        
                         <div class="button-normal">
-                            <button type="button" onclick="location.href='/login/html/signup.html' ">일반회원으로 시작하기</button>                       
+                            <div class="button-normal-section">  
+                            <a type="button" onclick="location"
+                             href='/login/html/signup.html' >로그인으로 시작하기</a> 
+                            </div>                     
                         </div>
                         <div class="button-kakao">
-                            <button type="button" onclick="location.href='/login/html/kakaologin.html' "><img src="/login/img/kakao_signup.png" alt=""></button>
+                            <a type="button" onclick="location"
+                             href='/login/html/kakaologin.html' >
+                             <img src="/login/img/kakao_signup.png" alt="">
+                            </a>
                         </div>
                             
                         </div>
