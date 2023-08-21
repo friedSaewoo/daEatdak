@@ -37,11 +37,10 @@ function createButtons() {
     ButtonContainer.innerHTML = '';
     //"게시글 항목 수 / 보여질 게시글 수" 를 올림하여 변수에 저장
     const totalPages = Math.ceil(postElements.length / page_num);
+
     //이전 버튼 동적 생성
     const prevButton = document.createElement('a');
-    //버튼 텍스트 추가
     prevButton.textContent = '<';
-    //bt, first 클래스 추가
     prevButton.classList.add('bt', 'first');
     prevButton.href = '#';
     //클릭 이벤트 추가, 현재 페이지가 1보다 클때만 동작
@@ -49,6 +48,7 @@ function createButtons() {
         if (currentPage > 1) {
             currentPage--;
             displayData();
+            currentPageButtons();
         }
     });
     //버튼 컨테이너에 버튼 추가
@@ -61,10 +61,18 @@ function createButtons() {
         button.classList.add('num');
         console.log(i +"버튼 생성");
         button.href = '#';
+        if (i === currentPage) {
+            button.classList.add('on');
+        } else {
+            button.classList.remove('on');
+        }
+
 
         button.addEventListener('click', () => {
             currentPage = i;
+            
             displayData();
+            currentPageButtons();
         });
 
         ButtonContainer.appendChild(button);
@@ -79,23 +87,22 @@ function createButtons() {
         if (currentPage < totalPages) {
             currentPage++;
             displayData();
+            currentPageButtons();
         }
     });
     ButtonContainer.appendChild(nextButton);
     
 }
-// 페이지 On 처리
-// function buttonOn(){
-//     console.log(currentPage);
-//     const onButton = document.querySelector('num');
-//     onButton.forEach((button,index)=>{
-//         if(index+1 == currentPage){
-//             button.classList.add('on');
-//         }else{
-//             button.classList.remove('on');
-//         }
-//     })
-// };
 
+function currentPageButtons() {
+    const buttons = document.querySelectorAll('a.num');
+    buttons.forEach((button, i) => {
+        if (i + 1 === currentPage) {
+            button.classList.add('on');
+        } else {
+            button.classList.remove('on');
+        }
+    });
+}
     createButtons();
 });
