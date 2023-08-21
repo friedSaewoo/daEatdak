@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //첫 화면 표시
     displayData();
 
+
+
     function displayData() {
         //게시글 목록이 동적으로 보여질 요소
         const boardList = document.querySelector('.board-list');
@@ -19,14 +21,19 @@ document.addEventListener('DOMContentLoaded', function () {
         boardList.innerHTML = '';
         //현재 페이지에 표시할 범위 설정
         const start = (currentPage - 1) * page_num;
-        const end = start+ page_num;
+        const end = start + page_num;
         //현재 표시할 범위만 display에 저장
         const display = Array.from(postElements).slice(start, end);
         //display에 있는 요소들을boardList에 추가하여 게시글 표시
+
+    
         display.forEach(item => {
             boardList.appendChild(item);
         });
     }
+
+
+
 
 function createButtons() {
     //동적으로 보여질 버튼영역
@@ -43,7 +50,7 @@ function createButtons() {
     //bt, first 클래스 추가
     prevButton.classList.add('bt', 'first');
     prevButton.href = '#';
-    //클릭 이벤트 추가, 현재 페이지가 1봐 클때만 동작
+    //클릭 이벤트 추가, 현재 페이지가 1보다 클때만 동작
     prevButton.addEventListener('click', () => {
         if (currentPage > 1) {
             currentPage--;
@@ -58,11 +65,16 @@ function createButtons() {
         const button = document.createElement('a');
         button.textContent = i;
         button.classList.add('num');
+
+
+
         button.href = '#';
         button.addEventListener('click', () => {
             currentPage = i;
             displayData();
         });
+
+
         ButtonContainer.appendChild(button);
     }
 
@@ -78,7 +90,6 @@ function createButtons() {
         }
     });
     ButtonContainer.appendChild(nextButton);
-    
 }
 
     createButtons();
