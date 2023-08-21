@@ -1,86 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>jQuery Sample</title>
+    </head>
 <body>
-    <style>
-    html, body {
-  background-color: #F1F1F1;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  width: 100%;
-}
+    <form id="server" action="result.jsp">
+        아이디입력 : <input type="text" id="id" name="id">
+        <input type="button" id="id_request" value="아이디중복확인"><br>
+        </form>
+        <div id="here"></div>
+        
+        <script>
+            window.onload = function () {
+                // 아이디 중복 체크
+                document.getElementById("id_request").onclick = function () {
+                    var inputId = document.getElementById("id").value; // 입력한 아이디 값
+    
+                    // 임의의 데이터 값
+                    var mockData = "java"; // 중복된 아이디라고 가정
+    
+                    var messageElement = document.getElementById("here");
+    
+                    if (inputId === mockData) {
+                        messageElement.textContent = "중복된 아이디입니다.";
+                        messageElement.style.color = "red";
+                    } else {
+                        messageElement.textContent = "사용가능한 아이디입니다.";
+                        messageElement.style.color = "green";
+                    }
+                };
+            };
+        </script>
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
 
-.wrapper {
-  background-color: #FFF;
-  border-radius: 2px;
-  box-shadow: 0px 2px 1px 0px #DDD;
-  box-sizing: border-box;
-  height: 300px;
-  left: 50%;
-  margin: -150px 0 0 -150px;
-  position: absolute;
-  top: 50%;
-  width: 300px;
-}
+        </script>
 
-.input {
- 
-  border: none;
-  border-bottom: 1px solid #CCC;
-  color: #555;
-  box-sizing: border-box;
-  font-family: 'Arvo';
-  font-size: 18px;
-  height: 50px;
-  left: 50%;
-  margin: -25px 0 0 -100px;
-  padding: 10px 0px;
-  position: relative;
-  top: 50%;
-  width: 200px;
-
-  &:focus {
-    outline: none;    
-  }
-}
-
-input::-webkit-input-placeholder {
-  color: #AAA;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: dodgerblue;
-}
-
-.input:focus+.underline {
-  transform: scale(1);
-}
-
-.underline {
-  background-color: dodgerblue;
-  display: inline-block;
-  height: 2px;
-  left: 50px;
-  margin-top: -4px;
-  position: absolute;
-  top: 185px;
-  -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-  width: 202px;
-}
-
-      
-    </style>
-
-
-<div class="hr-sect">Join us</div>
 </body>
 </html>

@@ -174,11 +174,6 @@ a{
     font-size: 15px;
 }
 
-.board-page a.num.on {
-    border-color: #000;
-    background: #000;
-    color: #fff;
-}
 
 .board-page a:first-child {
     border-left: 1px solid #ddd;

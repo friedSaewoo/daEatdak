@@ -36,7 +36,6 @@ $(".goods-container").each(function () {
 
   
   //매인배너 
-  let interval=3000;
   let $bannerBox = $('.banner-section');
   let $bannerImgs = $('.banner-section ul img');
   let $bannerCnt = $('.bannerCnt p');
@@ -47,35 +46,36 @@ $(".goods-container").each(function () {
   $bannerCnt.text(currentIndex+1 + '/' + bannerCnt);
 
   console.log('bannerCnt : ' + bannerCnt);
-  
+
   function bannerSlide(){
+    currentIndex++;
 
     $bannerBox.css('left', -(currentIndex * bannerWidth));
-    currentIndex++;
-    
+    $bannerCnt.text(currentIndex+1 + '/' + bannerCnt);
+    backGroundColor.css('background-color','rgb(245,185,99)');
+
+    console.log('currentIndex : ' + currentIndex);
+
     switch(currentIndex){
+
       case 1: 
-        backGroundColor.css('background-color','rgb(236,176,90)');
-        $bannerCnt.text(currentIndex + '/' + bannerCnt);
+        backGroundColor.css('background-color','rgb(255,91,82)');
+        $bannerCnt.text(currentIndex+1 + '/' + bannerCnt);
         break;
 
       case 2: 
-        backGroundColor.css('background-color','rgb(255,91,82)');
-        $bannerCnt.text(currentIndex + '/' + bannerCnt);
-        break;
-      case 3: 
         backGroundColor.css('background-color','rgb(254,219,93)');
-        $bannerCnt.text(currentIndex + '/' + bannerCnt);
-        currentIndex=0;
+        $bannerCnt.text(currentIndex+1 + '/' + bannerCnt);
+        currentIndex=-1;
         break;
+     
     }
 
-    console.log('currentIndex : ' + currentIndex);
   }
 
 
   function startTimer() {
-    timer = setInterval(bannerSlide, interval);
+    timer = setInterval(bannerSlide, 3000);
   
   }
   
@@ -102,46 +102,46 @@ startTimer();
 
 
 
-//상품들 영역 화살표 좌우슬라이드
-  let $slideBox = $('.goods-contents ul');
-  let $slideImgs = $('.goods-contents ul img');
-  let slideWidth = 1051;
-  let currentIdx = 0;
-  let slideCnt = $slideImgs.length;
-  console.log('slideCnt : ' + slideCnt);
-  checkEnd()
+// //상품들 영역 화살표 좌우슬라이드
+//   let $slideBox = $('.goods-contents ul');
+//   let $slideImgs = $('.goods-contents ul img');
+//   let slideWidth = 1051;
+//   let currentIdx = 0;
+//   let slideCnt = $slideImgs.length;
+//   console.log('slideCnt : ' + slideCnt);
+//   checkEnd()
   
-  $('.goods-right-button').stop().on('click', function () {
-      console.log('aa');
-      currentIdx++;
-      console.log('currentIdx : ' + currentIdx);
-      $slideBox.css('left', -(currentIdx * slideWidth));
-      $slideBox.css('transition', '0.5s ease');
-      checkEnd()
-      });
+//   $('.goods-right-button').stop().on('click', function () {
+//       console.log('aa');
+//       currentIdx++;
+//       console.log('currentIdx : ' + currentIdx);
+//       $slideBox.css('left', -(currentIdx * slideWidth));
+//       $slideBox.css('transition', '0.5s ease');
+//       checkEnd()
+//       });
   
-  $('.goods-left-button').on('click', function () {
-    console.log('bbb');
-    currentIdx--;
-    console.log('currentIdx : ' + currentIdx);
-    $slideBox.css('left', -(currentIdx * slideWidth));
-    $slideBox.css('transition', '0.5s ease');
-    checkEnd()
-  });
+//   $('.goods-left-button').on('click', function () {
+//     console.log('bbb');
+//     currentIdx--;
+//     console.log('currentIdx : ' + currentIdx);
+//     $slideBox.css('left', -(currentIdx * slideWidth));
+//     $slideBox.css('transition', '0.5s ease');
+//     checkEnd()
+//   });
   
-  function checkEnd() {
-    if (currentIdx <= 0) {
-      $('.goods-left-button').css('display', 'none');
-    } else {
-      $('.goods-left-button').css('display', 'block');
-    }
+//   function checkEnd() {
+//     if (currentIdx <= 0) {
+//       $('.goods-left-button').css('display', 'none');
+//     } else {
+//       $('.goods-left-button').css('display', 'block');
+//     }
   
-    if (currentIdx==1) {
-      $('.goods-right-button').css('display', 'none');
-    } else {
-      $('.goods-right-button').css('display', 'block');
-    }
-  }
+//     if (currentIdx==1) {
+//       $('.goods-right-button').css('display', 'none');
+//     } else {
+//       $('.goods-right-button').css('display', 'block');
+//     }
+//   }
 
 
 

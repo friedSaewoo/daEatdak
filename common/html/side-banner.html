@@ -26,6 +26,16 @@
         $("#floatMenu-container").hide();
         $('.top-button').hide();
 })
+
+function move(){
+    
+    $('.banner1').animate({width:'80'},200, 'linear',function(){
+        $('.banner1').delay(1000).animate({width:"0"},200)
+})
+}
+setInterval(move, 3000)
+
+
 </script>
 </head>
 
@@ -33,7 +43,6 @@
 <style>
 /* 우측 따라다니는 메뉴*/
 #floatMenu-container{
-    
     position: absolute;
     width: 80px;
     right:3%;
@@ -41,34 +50,34 @@
     z-index:9999;
 }
 .float-menu img {
+   
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    width: 100%;
-    height: 100%;
-}
-.float-menu ul {
     
+}
+.float-menu  {
     width: 80px;
-    height: 323px;
-
-}
-.float-menu ul li:nth-child(1) {
     height: 200px;
-}
-
-.float-menu ul li:nth-child(2),
-.float-menu ul li:nth-child(3) {
-    background-color: rgba(128, 128, 128, 0.178);
 
 }
+
+
+
 .float-menu ul li {
     
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80px;
-    height: 60px;
 }
+
+.float-user-menu ul li:nth-child(2),
+.float-user-menu ul li:nth-child(1){
+    height: 60px;
+    background-color: rgb(243, 243, 243);
+
+}
+
 .float-menu ul li span {
     font-size: 35px;
     color: gray;
@@ -88,11 +97,47 @@
     font-family: 'MaplestoryOTFBold';
 
 }
+
+
+
+.banner-change-section {
+    width: 80px;
+    height: 200px; 
+    overflow: hidden;
+}
+
+
+
+.banner-move{
+    display: flex;
+    width: 160px;
+    height: 200px;
+}
+
+.banner1 {
+    
+    width: 0px;
+    height: 200px;
+}
+
+.banner2 {
+    width: 80px;
+    height: 200px;
+
+}
+
 @media (max-width:1300px){
-    .float-menu{
+
+    .float-menu,  .floatMenu-container {
+        height: 0px;
+        width: 00px;
+    }
+    
+    .banner-change-section, .float-user-menu{
         display: none;
     }
-
+   
+  
     .float-button button {
         z-index: 999;
         background-color: rgb(243, 243, 243);
@@ -111,34 +156,34 @@
 <div>
     <div id="floatMenu-container">
         <div class="float-menu">
-            <ul>
-                <li>
-                    <img src="/common/img/sideBanner1.jpg" alt="사이드배너1"/>
-
-                </li>
-                <li>
-                    <a href="/QnAboard/html/board_list.html">
-                        <span class="material-symbols-outlined">
-                            support_agent
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </a>
-                </li>
-            </ul>
+            <div class="banner-change-section">
+                <div class="banner-move">
+                     <img  src="/common/img/sideBanner1.jpg" alt="사이드배너1" class="banner1"/>
+                     <img  src="/common/img/sidebanner2.png" alt="사이드배너2" class="banner2"/>
+                </div>
+            </div>
+            <div class="float-user-menu">
+                <ul>
+                    <li>
+                        <a href="/QnAboard/html/board_list.html">
+                            <span class="material-symbols-outlined">
+                                support_agent
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/product/html/product_cart_choice.html">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                        </a>
+                    </li>
+                </ul>
         </div>
         <div class="float-button">
-            <button class="top-button" onclick="">TOP</button>
+            <button class="top-button" >TOP</button>
+        </div>
         </div>
     </div>
-</div>
-
-
-
 </body>
 </html>
