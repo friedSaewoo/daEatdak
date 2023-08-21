@@ -30,8 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
-
 function createButtons() {
     //동적으로 보여질 버튼영역
     const ButtonContainer = document.querySelector('.board-page');
