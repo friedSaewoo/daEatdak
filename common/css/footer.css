@@ -22,7 +22,7 @@
 }
 .footer-term-section ul {
 
-    width: 300px;
+    width: 400px;
     height: 50px;
     align-items: center;
     display: flex;
@@ -31,18 +31,6 @@
 
 
 
-/* .footer-term-section ul li:nth-child(1),
-.footer-term-section ul li:nth-child(3),
-.footer-term-section ul li:nth-child(5),
-.footer-term-section ul li:nth-child(7)
-{
-    
-} */
-
-.footer-term-section ul li:nth-child(2),
-.footer-term-section ul li:nth-child(4){
-    width: 10px;
-}
 
 .footer-term-section a {
     font-size: 13px;
