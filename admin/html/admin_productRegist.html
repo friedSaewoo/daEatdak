@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daEatdak</title>
+	<link rel="stylesheet" href="../css/admin_main.css">
+	<link rel="stylesheet" href="../css/admin_productInfo.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="../js/admin_productInfo.js"></script>
+    <script src="../js/admin_productRegist.js"></script>
+
+</head>
+<body>
+    <main class="test">
+        <div class="section-container">  <!-- 좌측 관리자 메뉴-->             
+            <div class="aside">
+                <div class="main_logo">
+                    <a href="admin_main.html">
+                        <img style="width: 140px;" src="../img/main_logo.png">
+                    </a>
+                </div>
+                <a href="admin_memberInfo.html"><div class="admin_menu">회원정보</div></a>
+                <a href="admin_productInfo.html"><div class="admin_menu">상품관리</div></a>
+                <a href="admin_board.html"><div class="admin_menu">문의게시판</div></a>
+            </div>
+
+            <div class="admin_memberInfo">
+                <div class="PageName" style="margin: 50px auto;"><strong>상품 등록</strong></div>
+
+                <div>
+                    <div class="totalProdList"> 
+                        <div class="registerPage">
+                            <div style="width: 40%; margin-left: 10px;">
+
+                                <div id="root">
+                                    <div class="contents">
+                                        <div class="upload-box">
+                                            <div id="drop-file" class="drag-file">
+                                                <img src="" alt="미리보기 이미지" class="preview">
+                                            </div>
+                                            <label class="file-label" for="chooseFile">Choose File</label>
+                                            <input class="file" id="chooseFile" type="file" onchange="dropFile.handleFiles(this.files)" accept="image/png, image/jpeg, image/gif">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <div style="width: 60%; margin-left: 10px;">
+                                    <div class="productRegist">
+                                        <div><span>상품분류</span><br>
+                                            <select>
+                                                <option>닭고기</option>
+                                                <option>소고기</option>
+                                                <option>돼지고기</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="productRegist">
+                                        <div><span>상품명</span><br>
+                                            <input class="productRegist-text" type="text" placeholder="상품명을 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                    <div class="productRegist">
+                                        <div><span>상품가격</span><br>
+                                            <input class="productRegist-text" type="text" placeholder="상품 가격을 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                    <div class="productRegist">
+                                        <div><span>상품 재고</span><br>
+                                            <input class="productRegist-text" type="text" placeholder="상품 재고를 입력해 주세요.">
+                                        </div>
+                                    </div>
+                                    <div class="productRegist-btn">
+                                        <div>
+                                            <button class="ins" style="width: 80px; height: 40px;">상품 등록</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

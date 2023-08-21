@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+main{
+    display: block;
+    height: 100%;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.board-container{
+    display: flex;
+    margin :30px auto ;
+    background-color: #f7f7f7;
+    width: 1024px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+
+.board-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 95%;
+    height: 90%;
+    margin:10px auto;
+    border: 1px solid black;
+}
+
+.board-title{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.title-text{
+    font-size: 40px;
+    margin-left:30px;
+}
+
+.title-text-sub{
+    font-size: 15px;
+    margin-left:30px;
+}
+
+.board-list{
+    width: 93%;
+    margin: 0 auto;
+    border-top:2px solid black;
+}
+
+.board-list > div.top{
+    padding-top: 10px 10px;
+    border-bottom:1px solid #999;
+    display: flex;
+}
+
+.board-list > div.top {
+    font-size: 15px;
+}
+
+.board-list > div {
+    display: flex;
+    border-bottom:1px solid #ddd;
+}
+
+.board-list > div:last-child{
+    border-bottom: 1px solid #999;
+}
+
+.board-list > div > div{
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.board-list .num{
+    width: 10%;
+}
+
+.board-list .title{
+    width: 50%;
+}
+
+.board-list .writer{
+    width: 15%;
+}
+
+.board-list .date{
+    width:20%
+}
+
+.board-list .count{
+    width: 10%;
+}
+
+        /* 하단부 검색, 페이징, 글 등록 컨테이너 */
+.board-list-bottom{
+    display: flex;
+}
+
+.board-search-btn{
+    font-size: 13px;
+    padding: 2px 3px;
+    border:1px solid black;
+}
+
+.board-page a{
+    width: 26px;
+    height: 26px;
+}
+
+.board-page {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    font-size: 0;
+    margin: 30px auto;
+    width: 35%;
+}
+
+.board-page a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+    font-size: 15px;
+}
+
+.board-page a.bt {
+    padding-top: 9px;
+}
+
+.board-page a.num {
+    padding-top: 9px;
+    font-size: 15px;
+}
+
+.board-page a.num.on {
+    border-color: #000;
+    background: #000;
+    color: #fff;
+}
+
+.board-page a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.board-search-container{
+    margin: auto 33px auto 30px;
+    width: 35%;
+}
+
+.bt-container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 35px;
+    width: 30%;
+}
+
+.board-write{
+    width: 44px;
+    height: 25px;
+    border: 1px solid black;
+}
