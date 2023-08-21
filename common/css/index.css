@@ -97,7 +97,7 @@
     height: 330px;
     
 }
-.goods-contents ul, .recently-goods-contents ul {
+.recently-goods-contents ul {
     
     display: flex;
     justify-content: space-between;
@@ -106,7 +106,7 @@
     left: 0;
 }
 
-.goods-contents ul li, .recently-goods-contents ul li {
+.recently-goods-contents ul li {
    
     text-align: end;
     width: 180px;
@@ -137,8 +137,7 @@
 
 /* 카테고리별 상품 개별 설정 */
 .goods-section{
-    /* border: 2px solid red; */
-    height: 400px;
+    height: 760px;
 }
 
 .goods-tap {
@@ -197,13 +196,16 @@
     font-size: 18px;
     color: rgba(128, 128, 128, 0.61);
 }
-
+.goods-contents {}
 .goods-contents ul {
-    top:73px
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .goods-contents ul li{
     /* border: 1px solid gray; */
+    width: 210px;
     height: 340px;
 }
 
