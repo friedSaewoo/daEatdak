@@ -1,48 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jQuery Sample</title>
-    </head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+</head>
 <body>
-    <form id="server" action="result.jsp">
-        아이디입력 : <input type="text" id="id" name="id">
-        <input type="button" id="id_request" value="아이디중복확인"><br>
-        </form>
-        <div id="here"></div>
-        
-        <script>
-            window.onload = function () {
-                // 아이디 중복 체크
-                document.getElementById("id_request").onclick = function () {
-                    var inputId = document.getElementById("id").value; // 입력한 아이디 값
-    
-                    // 임의의 데이터 값
-                    var mockData = "java"; // 중복된 아이디라고 가정
-    
-                    var messageElement = document.getElementById("here");
-    
-                    if (inputId === mockData) {
-                        messageElement.textContent = "중복된 아이디입니다.";
-                        messageElement.style.color = "red";
-                    } else {
-                        messageElement.textContent = "사용가능한 아이디입니다.";
-                        messageElement.style.color = "green";
-                    }
-                };
-            };
-        </script>
-    </body>
-    </html>
-    
-    
-    
-    
-    
-    
-    
-
-        </script>
-
+    <button onclick="PostCodeSearch()">주소찾기</button>
+    <input type="text" id=address>
+    <script>
+        // function PostCodeSearch(){
+        //     new daum.Postcode({
+        //     oncomplete: function(data) {
+        //     // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분입니다.
+        //     // 예제를 참고하여 다양한 활용법을 확인해 보세요.
+        //     }
+        //     }).open();
+        // }
+            function PostCodeSearch(){
+            new daum.Postcode({
+            oncomplete: function(data) {
+                console.log(data);
+                document.querySelector('#address').value = data.roadAddress;
+            }
+            }).open();
+        }
+    </script>
 </body>
 </html>
