@@ -22,21 +22,17 @@ a{
 .board-container{
     display: flex;
     margin :30px auto ;
-    background-color: #f7f7f7;
     width: 1024px;
     height: 100%;
-    border: 1px solid black;
 }
 
 
 .board-main{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     width: 95%;
     height: 90%;
     margin:10px auto;
-    border: 1px solid black;
 }
 
 .board-title{
@@ -50,17 +46,19 @@ a{
 .title-text{
     font-size: 40px;
     margin-left:30px;
+    color: rgb(202, 46, 46);
 }
 
 .title-text-sub{
     font-size: 15px;
     margin-left:30px;
+    color: rgb(128,128,128);
 }
 
 .board-list{
     width: 93%;
     margin: 0 auto;
-    border-top:2px solid black;
+    border-top:2px solid rgb(202, 46, 46);
 }
 
 .top{
@@ -107,6 +105,10 @@ a{
     width: 10%;
 }
 
+.post{
+    height: 50px;
+}
+
 .post .num{
     width: 10%;
 }
@@ -139,7 +141,7 @@ a{
 }
 
 .on {   
-    background-color: #007bff;
+    background-color: rgb(202, 46, 46);
     color: #fff;
     font-weight: bold;
 }
