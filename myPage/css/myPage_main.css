@@ -27,11 +27,9 @@ p{
 .myPage-container{
     display: flex;
     margin :30px auto ;
-    background-color: #f7f7f7;
     width: 1024px;
     height: 100%;
     min-height: 550px;
-    border: 1px solid black;
 }
 
 .sidemenu{
@@ -40,8 +38,8 @@ p{
     min-height: 530px;
     margin: 10px;
     padding: 10px;
-    background-color: white;
-    border: 1px solid black;
+
+    border: 2px solid rgb(202, 46, 46);
 }
 
 .side-item{
@@ -55,7 +53,8 @@ p{
 }
 
 .side-item:hover{
-    background-color: rgb(94, 190,231);
+    background-color: rgb(202, 56, 46);
+    color: white;
 }
 
 .content-text{
@@ -74,6 +73,8 @@ p{
     display: flex;
     width: 300px;
     height: 70px;
+
+    color: rgb(202, 46, 46);
 }
 
 .title-text{
@@ -84,7 +85,6 @@ p{
 .myPage-main{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     top:12%;
     left: 31%;
     width: 790px;
@@ -119,12 +119,11 @@ p{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    border-top: 1px solid black;
-    width: 95%;
-    height: 300px;
+    width: 300px;
+    height: 175px;
     align-items: center;
     padding-top: 100px;
-    background-color: bisque;
+    border: 3px solid rgb(202, 46, 46);
 }
 
 .inner > .text{
@@ -153,4 +152,62 @@ p{
     border: none;
     background-color: rgb(94, 190,231);
     color: white;
+}
+
+.password-check-container{
+    border-top: 2px solid rgb(202, 56, 46);
+    width: 93%;
+    margin: 0 auto;
+}
+
+.password-check-box{
+    border: 3px solid rgb(202, 56, 46);
+    width: 300px;
+    height: 175px;
+    margin:70px auto 0;
+}
+.password-check-box-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    margin: 40px auto 0;
+}
+
+.password-check-box-inner > .content-password{
+    background: #f3f3f3;
+    border: 1px solid #cecdce;
+    margin-top: 5px;
+    width: 150px;
+}
+
+.password-check-box-inner >b{
+    color: rgb(202, 56, 46);
+}
+
+.inner-btnBox{
+    width: 90%;
+    display: flex;
+    margin-top:10px
+}
+
+.inner-btnBox > .cancle{
+    width: 48%;
+    height: 30px;
+    border: none;
+    font-size: 12px;
+    color: white;
+    background-color: #666666;
+    cursor: pointer;
+}
+
+.inner-btnBox > .admit{
+    width: 48%;
+    margin-left: auto;
+    border: none;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(202, 56, 46);
+    cursor: pointer;
 }
