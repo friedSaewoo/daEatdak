@@ -36,13 +36,22 @@ function selectEmail(ele){
 
 window.onload = function () {
     // 아이디 중복 체크
-    document.getElementById("id_request").onclick = function () {
-        var inputId = document.getElementById("id").value; // 입력한 아이디 값
+    document.getElementById("PostCodeSearch").onclick = function PostCodeSearch(){
+        new daum.Postcode({
+        oncomplete: function(data) {
+            console.log(data);
+            document.querySelector('#address').value = data.roadAddress;
+        }
+        }).open();
+    }
 
+
+    document.getElementById("id_request").onclick = function () {      
+        let inputId = document.getElementById("id").value; // 입력한 아이디 값
         // 임의의 데이터 값
-        var mockData = "admin"; // 중복된 아이디라고 가정
+        let mockData = "admin"; // 중복된 아이디라고 가정
 
-        var messageElement = document.getElementById("here");
+        let messageElement = document.getElementById("here");
 
         if (inputId === mockData) {
             messageElement.textContent = "중복된 아이디입니다.";
