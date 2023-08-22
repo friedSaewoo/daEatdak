@@ -131,18 +131,29 @@
 }
 .buy-set{
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 .buy-set form{
-    width: 60%;
-    text-align: right;
+    display: flex;
+    width: 100%;
+    justify-content: right;
     font-size: 18px;
-    padding: 10px;
+    padding-right: 50px;
+    margin-top: 10px;
+    /* border: 1px solid black; */
 }
-.buy-set form input{
-    width: 100px;
+
+
+.product-quantity div:last-child{
+    border: 1px solid #666;
+    width: 60px;
+}   
+
+.buy-set form div button{
+    border: none;
+    width: 20px;
+    background-color: white;
+    cursor: pointer;
 }
 
 .product-info {
@@ -189,3 +200,37 @@
     line-height: 80px;
 }
 
+.product_deteil_area{
+    border-right:1px solid #999;
+    border-left:1px solid #999;
+    border-top:1px solid #999; 
+    border-bottom:1px solid #999; 
+    height: 2000px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.product_deteil_area p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.product_deteil_info{
+    height: 100%;
+    text-align: center;
+}
+
+.deteil_more{
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.deteil_more span{
+    font-size: 25px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.material-symbols-outlined{
+    box-sizing: border-box;
+}
