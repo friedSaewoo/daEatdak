@@ -38,28 +38,31 @@ p{
     min-height: 530px;
     margin: 10px;
     padding: 10px;
-
-    border: 2px solid rgb(202, 46, 46);
+    border: 1px solid #E6E6E6;
 }
 
 .side-item{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     width: 100%;
     height: 60px;
-    border: 1px solid black;
-    margin-bottom: 10px;
+    border-top: 1px solid #eee;
+    margin-bottom: 10px; 
 }
 
-.side-item:hover{
-    background-color: rgb(202, 56, 46);
-    color: white;
+.side-item:first-child{
+    border: none;
 }
 
 .content-text{
-    font-size: 20px;
-    margin : 0 auto 0;
+    font-size: 23px;
+    margin: 0 auto;
+}
+
+.content-text.on{
+    color: rgb(202, 46, 46);
 }
 
 /* .myPage-title{
@@ -73,7 +76,6 @@ p{
     display: flex;
     width: 300px;
     height: 70px;
-
     color: rgb(202, 46, 46);
 }
 

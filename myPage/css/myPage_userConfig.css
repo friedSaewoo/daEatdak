@@ -33,28 +33,32 @@ a{
     min-height: 530px;
     margin: 10px;
     padding: 10px;
-    background-color: white;
-    border: 2px solid rgb(202, 56, 46);
+    border: 1px solid #E6E6E6;
 }
+
 
 .side-item{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: #fff;
     width: 100%;
     height: 60px;
-    border: 1px solid black;
-    margin-bottom: 10px;
+    border-top: 1px solid #eee;
+    margin-bottom: 10px; 
 }
 
-.side-item:hover{
-    background-color: rgb(202, 56, 46);
-    color: white;
+.side-item:first-child{
+    border: none;
 }
 
 .content-text{
-    font-size: 20px;
+    font-size: 23px;
     margin : 0 auto 0;
+}
+
+.content-text.on{
+    color: rgb(202, 46, 46);
 }
 
 .myPage-title{
@@ -94,12 +98,113 @@ a{
 }
 .myPage-main-contents{
     width: 93%;
-    min-height: 470px;
+    min-height: 610px;
     height: 100%;
     border-top:2px solid rgb(202, 56, 46);
     margin: 0 auto;
     padding-top: 10px;
     display: flex;
+    border-bottom: 1px solid #E6E6E6;
+}
+.config-box{
+    display: flex;
     flex-direction: column;
+    margin: 10px 0 0 10px;
+    width: 93%;
+    height: 100%;
+}
+
+.box{
+    display: flex;
     align-items: center;
+    height: 80px;
+    border-bottom:1px solid #e6e6e6;
+}
+.box:last-child{
+    border: none;
+}
+
+.box > input{
+    border: 1px solid #e6e6e6;
+    height: 28px;
+}
+
+
+
+.box.address{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.box.address > div{
+    display: flex;
+}
+.box.address > div > input{
+    border: 1px solid #e6e6e6;
+    height: 28px;
+}
+#check{
+    font-size: 11px;
+}
+.box.name > input{
+    margin-left: 110px;
+}
+.box.id > input{
+    margin-left: 96px;
+}
+.box.password > input{
+    margin-left: 82px;
+}
+.box.password.check > input{
+    margin-left: 50px;
+}
+.email{
+    margin-left: 96px;
+    
+}
+.email > input{
+    border: 1px solid #e6e6e6;
+    height: 28px;
+}
+
+.email > select{
+    border: 1px solid #e6e6e6;
+    height: 28px;
+}
+
+.box.phone > input{
+    margin-left: 82px;
+}
+
+.box.address > div > input{
+    margin-top: 10px;
+    margin-left: 110px;
+    margin-right: 5px;
+    width:300px;
+}
+
+.box.address>input{
+    margin-top: 10px;
+    width: 355px;
+    margin-left: 137px;
+    border: 1px solid #e6e6e6;
+    height: 300px;
+    padding: 3px 0;
+}
+
+.box.address > div{
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+}
+
+.address-btn{
+    margin-top: 10px;
+    height: 28px;
+    color: white;
+    border: none;
+    padding: 0 3px;
+    cursor: pointer;
+    border-radius: 10%;
+    background-color: rgb(202, 46, 46);
 }
