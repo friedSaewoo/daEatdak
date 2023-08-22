@@ -29,18 +29,22 @@ function filter_board() {
 				board_list[i].style.display = "none"
 			}
 		}
-
+		pagination();
 	})
   }
 
 
 function filter() {
 
-	$("select[name=selectSearch]").change(function(){
+/*	$("select[name=selectSearch]").change(function(){
 		var select_search = $(this).val();
 		console.log($(this).val()); //value값 가져오기
-	});
+	});*/
 
+	$(".memberSearchBtn").click(function() {
+
+//	$(".pagination").hide();
+	$(".memberInfo_search").css("margin","10px");
 	var select_search = document.getElementById("selectSearch")
 	var value = (select_search.options[select_search.selectedIndex].value);
 
@@ -70,12 +74,14 @@ function filter() {
 			mem_info_list[i].style.display = "none"
 		}
 	}
-  }
+	
+	})
+}
 
 
 
 function pagination(){
-	filter_board();
+//	filter_board();
 //	filter();
 
 	$("select[name=memListNum]").change(function(){
@@ -127,33 +133,26 @@ function pagination(){
 		var page=$(this).text();	// 현재a태그의 텍스트만 전체 출력
 		var temp=page-1;	//전체 출력한 텍스트에 -1
 		var start=temp*req_num_row;	//	(텍스트 수 -1) *보여줄 페이지 수
-		alert("처음" + page[0]);
 
-		$(".paging_btn").find('a').removeClass('disabled');
+//		$(".paging_btn").find('a').removeClass('disabled');
 
-		$(this).find('a').removeClass();
-		if(page == 1) {	
-			$(".btn01").css("color","red")
-			$(this).css("color","black")
+//		$(this).find('a').removeClass();
+
+		if(page == 1) {
+			$(this).removeClass('btn01');
+			$(this).css("color","red")
+//			$(this).not($(this)).addClass('disabled');
 		} else if(page == 2) {
-			$(".btn01").css("color","red")
-			$(this).css("color", "white");
+			$(this).removeClass('btn01');
+			$(this).css("color","white")
+//			$(this).not($(this)).addClass('disabled');
 		} else if(page == 3) {
-			$(".btn01").css("color","red")
-			$(this).css("color", "white");
+			$(this).removeClass('btn01');
+			$(this).css("color","green")
+//			$(this).not($(this)).addClass('disabled');
 		}
 
 
-			if(page == 1) {
-				$(this).removeClass('disabled');
-				btn01.not($(this)).addClass('disabled');
-			} else if(page == 2) {
-				$(this).removeClass('disabled');
-				btn01.not($(this)).addClass('disabled');
-			} else if(page == 3) {
-				$(this).removeClass('disabled');
-				btn01.not($(this)).addClass('disabled');
-			}
 
 			for(var i=0; i< req_num_row; i++){	//페이지의 리스트 수 반복
 			$tr.eq(start+i).show();
@@ -172,7 +171,6 @@ function pagination(){
 		for(var i=0; i< req_num_row; i++){
 			$tr.eq(start+i).show();
 		}
-		alert("firstPage test");
 	});
 
 	$("#lastPage").click('',function(e) {	//lastPage의 id를 가진 태그가 클릭되었을 때
@@ -185,7 +183,6 @@ function pagination(){
 		for(var i=0; i< req_num_row; i++){
 			$tr.eq(start+i).show();
 		}
-		alert("firstPage test");
 	});
 
 
@@ -194,7 +191,8 @@ function pagination(){
 
 $('document').ready(function(){
 	pagination();
-
+	filter_board();
+	filter();
 
 	$('.pagination tr:first-child').addClass("disabled");
 	
