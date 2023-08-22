@@ -1,0 +1,242 @@
+/* header css */
+
+
+.header {
+    width: 100%;
+    height: 150px;
+    border-bottom: 2px solid rgb(202, 46, 46);
+
+   
+    
+}
+
+.header-container {
+    width: 1024px;
+    margin: 0 auto;
+}
+.header-menu-container {
+    position: relative;
+    height: 180px;
+    
+}
+.header-logo-container {
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 450px;
+    height: 100px;
+}
+.header-logo-container h4 {
+  
+    font-size: 60px;
+
+}
+.header-logo-container p {
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    position: absolute;
+    width: 65px;
+    height: 22px;
+    /* border: 2px solid red; */
+    left:45px;
+    top: 78px;
+    font-size: 18px;
+    color: gray;
+    
+
+    }
+
+.header-logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-top {
+    display: flex;
+}
+
+.user-container {
+    /* border: 2px solid red; */
+    width: 600px;
+    display: flex;
+    justify-content:end;
+    
+}
+
+.user-container ul {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items:last baseline;
+    text-align: center;
+}
+
+.user-container li {
+    line-height: 1.2;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 95px;
+    height: 80px;
+}
+
+
+.user-container a {
+    display: block;
+
+    font-size: 20px;
+    color: gray;
+}
+
+.user-container span {
+    color: black;
+    font-size: 30px;
+}
+.nav-container{
+    display: flex;
+    width: 1024px;
+    height: 50px;
+}
+
+.nav-ul-container ul {
+    
+    box-sizing: border-box;
+    padding: 10px;
+    width: 550px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-ul-container ul li a {
+    color: black;
+    font-size: 18px;
+}
+
+.nav-ul-container ul li a h4 {
+    /* font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive; */
+    /* font-family: 'ONE-Mobile-POP';     */
+    font-family: 'MaplestoryOTFBold';
+
+
+}
+
+/* 메인메뉴 호버 시 색상 변경 */
+.nav-ul-container a:hover{
+    color: rgb(202, 46, 46) !important;
+   
+}
+
+
+
+/* 검색 부분 */
+.search-container {
+    width: 474px;
+    display: flex;
+    justify-content: end;
+}
+
+.search-container form {
+    box-sizing: border-box;
+    width: 474px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.search-container fieldset {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 315px;
+    height: 25px;
+    
+}
+
+.search-container button {
+    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 34px;
+    background-color: white;
+
+}
+
+
+.nav-fix-menu-container{
+    z-index: 9999;
+   background-color: white;
+    width: 100%;
+    min-width: 1024px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    border-bottom: 2px solid rgb(202, 46, 46);
+}
+.nav-fix-menu-content {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    height: 60px;
+    margin: 0 auto;
+
+  
+
+}
+
+.nav-fix-title {
+    width: 100px;
+    font-size: 40px;
+    
+    
+}
+.header-logo-container h4 ,.nav-fix-title h4 {
+    color: rgb(202, 46, 46);
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+}
+
+.nav-fix-menu ul {
+    margin-left: 20px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-fix-menu ul a:hover {
+    color: rgb(202, 46, 46) !important;
+
+    
+}
+
+.nav-fix-menu a {
+   
+    font-size: 18px;
+    color:black
+}
+
+.nav-fix-menu h4 {
+    /* font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive; */
+    font-family: 'MaplestoryOTFBold';
+
+}
+
+.fix-search {
+    width: 550px;
+    justify-content: end;
+}
+

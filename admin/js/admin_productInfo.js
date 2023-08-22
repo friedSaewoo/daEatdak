@@ -14,11 +14,11 @@ function pagination(){
 	}
 
 	for(var i=1; i<num_pages; i++){	//페이지 수를 반복하여 Element코드(append)로 페이징 수 만큼 반복
-		$('.pagination').append("<div class='paging_btn'><a href=''>"+i+"</a>&nbsp;/&nbsp;</div>");
+		$('.pagination').append("<div class='paging_btn'><a href=''>"+i+"</a></div>&nbsp;/&nbsp;");
 		$('.pagination li:nth-child(2)').addClass("active");
 
 		if(i == num_pages-1) {	//만약 반복한 수가 페이징 수 -1과 같으면 (최대)페이징 수 를 출력
-			$('.pagination').append("<div class='paging_btn'><a href=''>"+ num_pages +"&nbsp;&nbsp;</a></div>");
+			$('.pagination').append("<div class='paging_btn'><a href=''>"+ num_pages +"</a></div>&nbsp;&nbsp;");
 		}
 	
 	}
@@ -56,7 +56,6 @@ function pagination(){
 		for(var i=0; i< req_num_row; i++){
 			$li.eq(start+i).show();
 		}
-		alert("firstPage test");
 	});
 
 	$("#lastPage").click('',function(e) {	//lastPage의 id를 가진 태그가 클릭되었을 때
@@ -69,7 +68,6 @@ function pagination(){
 		for(var i=0; i< req_num_row; i++){
 			$li.eq(start+i).show();
 		}
-		alert("firstPage test");
 	});
 
 

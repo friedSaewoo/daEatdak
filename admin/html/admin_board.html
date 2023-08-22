@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>daEatdak</title>
+    <title>다잇닭</title>
 	<link rel="stylesheet" href="../css/admin_main.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="../js/admin_memberInfo.js"></script>
     <script src="../js/admin_board.js"></script>
+    <link rel="stylesheet" href="../css/table.css">
 
 </head>
 <body>
@@ -19,6 +20,7 @@
                         <img class="" style="width: 140px;" src="../img/mainLogo.png">
                     </a>
                 </div>
+                <a href="admin_main.html"><div class="admin_menu">메인화면</div></a>
                 <a href="admin_memberInfo.html"><div class="admin_menu">회원정보</div></a>
                 <a href="admin_productInfo.html"><div class="admin_menu">상품관리</div></a>
                 <a href="admin_board.html"><div class="admin_menu">문의게시판</div></a>
@@ -29,6 +31,7 @@
                     <strong>문의 게시판 리스트(QnA)</strong>
                 </div>
 
+<!--
                 <div style=" margin: 5px auto; text-align: right;">
                     <select name="memListNum">
                         <option value="10">10개</option>
@@ -36,12 +39,13 @@
                         <option value="30">30개</option>
                     </select>
                 </div>
+-->
 
                 <div class="table-div">
                     <div class="table-scroll">
                         <table border="2" height="50">  <!--회원 정보 리스트 테이블-->
-                            <thead class="">
-                                <tr bgcolor="blue" class="t_head">
+                            <thead >
+                                <tr class="t_head">
                                     <th class="t_head" style="width: 120px;">게시번호</th>
                                     <th class="t_head" style="width: 320px;">문의 제목</th>
                                     <th class="t_head" style="width: 120px;">작성자</th>
@@ -203,7 +207,7 @@
                     
                     <div class="pageing" style="margin: 15px auto;">
                         <div class="pagination">
-                            <div class="arrowPage pv" id="firstPage">&lt;&nbsp;&nbsp;</div>
+                            <div class="arrowPage pv" id="firstPage">&lt;</div>&nbsp;&nbsp;
                             <div class="arrowPage nt" id="lastPage">&gt;</div>
                         </div>
                     </div>

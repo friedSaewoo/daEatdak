@@ -52,7 +52,7 @@ a {
 }
 
 table {
-    margin: 0px auto;
+    margin: 10px auto;
 }
 .admin_memberInfo, .admin_productInfo {
     margin: 0px auto;
@@ -118,7 +118,6 @@ table {
     display: flex;
     text-align: center;
     justify-content: center;
-    border: 1px solid black;
 }
 
 
