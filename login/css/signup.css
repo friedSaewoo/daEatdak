@@ -81,6 +81,15 @@
     vertical-align:middle
 }
 
-
+#PostCodeSearch {
+    background-color: RGB(94,190,231);
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 11px;
+    transition: background-color 0.3s ease;
+}
 
 
