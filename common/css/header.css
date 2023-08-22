@@ -22,12 +22,10 @@
 .header-logo-container {
     display: flex;
     align-items: center;
-    /* border: 2px solid red; */
     width: 450px;
     height: 100px;
 }
 .header-logo-container h4 {
-  
     font-size: 60px;
 
 }
