@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="/common/css/common.css"/>
       <link rel="stylesheet" href="/common/css/header.css"/>
       <link rel="stylesheet" href="/common/css/footer.css"/>
+      <link rel="shortcut icon" type="image/x-icon" href="/common/img/logoPic.png" alt="타이틀 로고" />
       <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script src="/common/js/common.js" defer></script>
       <script src="/common/js/header.js" defer></script>
@@ -33,6 +34,9 @@
             <div class="write-title">
               <input class="content-title" type="text" placeholder="제목을 입력하세요" maxlength="50">
               <input class="content-password" type="password" placeholder="비밀번호" maxlength="4">
+              <div class="checkbox">
+                <p>비공개 여부</p><input type="checkbox">
+              </div>
             </div>
             <div class="board-write">
               <div class="write-content">
@@ -40,9 +44,7 @@
               </div>
               <div class="write-bottom">
                 <a href="./board_list.html" class="write-btn list">목록으로</a>
-                <div class="checkbox">
-                  <p>비공개 여부</p><input type="checkbox">
-                </div>
+
                 <a href="./board_list.html" class="write-btn write">글 등록</a>
               </div>
             </div>
