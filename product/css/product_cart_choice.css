@@ -90,31 +90,40 @@
     padding-left: 10px;
 }
 .goods-text-area span{
-    display: inline-block;
+    /* display: inline-block; */
     padding: 10px 0px;
 }
 
 .order-choice{
-    padding-left: 400px;
+    padding-left: 350px;
+    /* border: 1px solid black; */
+   
+}
 
+.order-choice span{
+    display: inline-block;
+    /* border: 3px solid black; */
+}
+
+.order-choice div{
+    border: 1px solid #999;
+    width: 80px;
+}
+
+.order-choice button{
+    border: none;
+    width: 30px;
+    /* color: black; */
+    /* position: absolute; */
+    background-color: white;
+  
 }
 
 .price{
     padding-left: 20px;
 }
-.x{
-    padding-left: 10px;
-}
-.cart-page{
-    display: flex;
-    justify-content: center;
-}
-.cart-page-num{
-    display: flex;
-    /* border: 1px solid red; */
-    justify-content: space-between;
-    width: 50px;
-}
+
+
 .product-order{
     margin-top: 40px;
     /* border: 1px solid black; */
@@ -129,4 +138,5 @@
     border: 1px solid rgba(94,190,231);
     width: 300px;
     border-radius: 5%;
+    cursor: pointer;
 }

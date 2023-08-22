@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/common/css/header.css">
     <link rel="stylesheet" href="/common/css/footer.css">
     <link rel="stylesheet" href="/common/css/common.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/common/img/logoPic.png" alt="타이틀 로고" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/product/css/product_buy_page/product_buy_page.css">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -19,10 +20,10 @@
         <!-- 사이드 배너 영역 -->
         <div class="side-banner">
         </div>
+    </div>
     <div class="header-main-container">
         <div class="header">
         </div>
-        <div class="Wrap">
             <main class="container">
                 <div class="product-buy-page">
                     <div class="product-info-top">
@@ -34,7 +35,7 @@
                         <div class="product-info-top-right">
                             <div class="product-name">
                                 <div class="title">
-                                    <h1>[다있닭]</h1>
+                                    <h1>[다잇닭]</h1>
                                     <h1>닭가슴살 스테이크 갈릭맛 100g</h1>
                                 </div>
                                 <p>저염식 최고의 식단에 적극 추천~~</p>
@@ -97,8 +98,14 @@
                             </div>
                             <div class="buy-set">
                                 <form class="product-quantity" action="" method="">
-                                    <span>수량</span>
-                                    <input class="product" type="number" name="quantity" min="1" max="100" step="1">
+                                    <div>
+                                        <span>수량</span>
+                                    </div>
+                                    <div>    
+                                        <button type="button" class="plus">+</button>
+                                        <span class="number">0</span>
+                                        <button type="button" class="minus">-</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -114,12 +121,28 @@
                         <div>장바구니에 추가되었습니다</div>
                         <div> 장바구니로 이동하세요</div>
                     </div>
+                    <div class="product_deteil_area">
+                        <p>상품정보</p>
+                    
+                        <div class="product_deteil_info">
+                           
+                            <img src="/product/img/product_info.jpg">
+                            <img src="/product/img/product_info.2jpg.jpg">
+                           
+                        </div>
+                    </div>
+                    <div class="deteil_more">
+                        <span class="open">
+                            상품정보 더보기
+                        </span>
+                        <span class="material-symbols-outlined">
+                            expand_more
+                        </span>
+                    </div>
                 </div>    
             </main>
-        </div>        
-    </div>    
+    </div>                 
     <div class="footer">
     </div> 
 </body>
-
 </html>
