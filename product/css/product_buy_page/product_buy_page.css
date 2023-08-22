@@ -137,18 +137,24 @@
     display: flex;
     width: 100%;
     justify-content: right;
-    font-size: 18px;
+    font-size: 15px;
     padding-right: 50px;
     margin-top: 10px;
-    /* border: 1px solid black; */
+
 }
 
 
 .product-quantity div:last-child{
     border: 1px solid #666;
-    width: 60px;
+    width: 70px;
 }   
 
+.number{
+    display: inline-block;
+
+    text-align: center;
+    width: 20px;
+}
 .buy-set form div button{
     border: none;
     width: 20px;

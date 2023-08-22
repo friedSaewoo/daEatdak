@@ -30,6 +30,7 @@ buttons.addEventListener('click', function(){
         checkedInputs.forEach(function(input){
             $(input).closest(".cart-goods").remove();
         });
+        $all.prop('checked', false);
     } else {
         alert("선택된 상품이 없습니다.");
     }
@@ -55,7 +56,7 @@ productorders.addEventListener('click',function(){
         });
         alert("상품주문완료");
         $('.product-order span').css('display','none');
-        window.location.href="http://127.0.0.1:5501/product/html/product_cart.html";
+        window.location.href="/product/html/product_cart.html";
     }
 });
 
