@@ -23,14 +23,9 @@
 
 .cart_main_bottom{
     min-height: 700px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
 .checkbox-area{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -45,12 +40,10 @@
 }
 
 .checkbox-area .button-click{
-    /* border: 1px solid black; */
     float: right;
     padding-right: 10px;
 }
 .button-click button{
-    /* background-color:white; */
     border: 1px solid #666;
     border-radius: 10%;
 }
@@ -61,11 +54,9 @@
 
 .cart-input{
     margin-top: 10px;
-    /* border: 1px solid black; */
 }
 .goods{
     margin: 0px;
-    /* border: 1px solid black; */
 }
 
 .goods li{
@@ -90,31 +81,29 @@
     padding-left: 10px;
 }
 .goods-text-area span{
-    /* display: inline-block; */
     padding: 10px 0px;
 }
 
 .order-choice{
     padding-left: 350px;
-    /* border: 1px solid black; */
-   
 }
 
 .order-choice span{
     display: inline-block;
-    /* border: 3px solid black; */
+    width: 30px;
+    text-align: center;
+    font-size: 15px;
 }
 
 .order-choice div{
     border: 1px solid #999;
     width: 80px;
+    
 }
 
 .order-choice button{
     border: none;
-    width: 30px;
-    /* color: black; */
-    /* position: absolute; */
+    width: 20px;
     background-color: white;
   
 }
@@ -126,7 +115,6 @@
 
 .product-order{
     margin-top: 40px;
-    /* border: 1px solid black; */
     text-align: center;
 }
 
