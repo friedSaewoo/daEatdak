@@ -62,7 +62,7 @@ a{
 }
 
 .top{
-    width: 93%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 10px 10px;
     display: flex;
@@ -86,27 +86,30 @@ a{
 }
 
 .top .num{
-    width: 10%;
+    margin-left: 60px;
 }
 
 .top .title{
-    width: 50%;
+    margin-left: 230px;
 }
 
 .top .writer{
-    width: 10%;
+    margin-left:205px;
 }
 
 .top .date{
-    width:20%
+    margin-left: 55px;
 }
 
 .top .count{
-    width: 10%;
+    margin-left: 90px;
 }
 
 .post{
-    height: 50px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
 }
 
 .post .num{
@@ -134,11 +137,33 @@ a{
     display: flex;
 }
 
-.board-search-btn{
-    font-size: 13px;
-    padding: 2px 3px;
-    border:1px solid black;
+.board-search-container > form{
+    height: 90px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
 }
+
+form > select{
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+form > input{
+    margin-top: 10px;
+}
+
+form > button{
+    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 34px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+
 
 .on {   
     background-color: rgb(202, 46, 46);
@@ -197,5 +222,7 @@ a{
 .board-write{
     width: 44px;
     height: 25px;
-    border: 1px solid black;
+    background-color:rgb(202, 46, 46);;
+    color: white;
+    border-radius: 10%;
 }

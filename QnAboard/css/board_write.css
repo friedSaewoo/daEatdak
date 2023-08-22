@@ -61,6 +61,7 @@ textarea{
     color: rgb(128,128,128);
 }
 .write-title{
+    display: flex;
     width: 93%;
     margin: 0 auto;
     margin-bottom: 5px;
@@ -104,23 +105,35 @@ textarea{
     display: flex;
 }
 
-.write-btn{
-    border: 1px solid black;
-    
+.write-btn{ 
     padding: 0 5px;
     padding-top:3px;
 }
 
 .write-btn.list{
     margin-right: auto;
+
+    width: 65px;
+    height: 25px;
+    background-color:rgb(202, 46, 46);
+    color: white;
+    border-radius: 10%;
 }
 .write-btn.write{
     margin-left: 30px;
+
+    width: 55px;
+    height: 25px;
+    background-color:rgb(202, 46, 46);
+    color: white;
+    border-radius: 10%;
 }
 .checkbox{
     display: flex;
-    border: 1px solid black;
     padding: 3px;
+    margin-left: auto;
+    font-size: 15px;
+    color: #666;
 }
 .checkbox > input{
     width: 15px;
