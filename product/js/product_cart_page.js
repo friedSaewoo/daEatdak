@@ -30,6 +30,7 @@ buttons.addEventListener('click', function(){
         checkedInputs.forEach(function(input){
             $(input).closest(".cart-goods").remove();
         });
+        $all.prop('checked', false);
     } else {
         alert("선택된 상품이 없습니다.");
     }
